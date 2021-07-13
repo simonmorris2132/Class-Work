@@ -44,8 +44,12 @@ function whatIsInAName(collection, source) {
 
         let passedTest = true;
         console.log(source, 'test:',testObj)
-        if (testObj != source) {
-            passedTest = false;
+        for (const key in source) {
+            
+            if (source[key] != testObj [key]) {
+                passedTest = false;
+            }
+
         }
         
         if (passedTest == true) {
@@ -53,7 +57,7 @@ function whatIsInAName(collection, source) {
         }
 
     }
-    // Only change code above this line
+    console.log(arr);
     return arr;
   }
   
