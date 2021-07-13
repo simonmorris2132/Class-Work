@@ -13,5 +13,5 @@ You can expect only positive integers for vote counts.
 */
 
 function getVoteCount(votes) {
-	
+	console.log("hI")
 }
