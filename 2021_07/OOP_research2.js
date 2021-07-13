@@ -15,3 +15,26 @@ You can expect only positive integers for vote counts.
 function getVoteCount(votes) {
 	
 }
+
+/*  */
+
+
+function whatIsInAName(collection, source) {
+    var arr = [];
+    // Only change code below this line
+  
+    collection.forEach( testObj => {
+        console.log(testObj)
+    } )
+
+   /*  for (let i = 0; i < collection.length; i++) {
+        const testObj = collection[i]
+        
+        console.log(testObj) //this also works
+    }
+ */
+    // Only change code above this line
+    return arr;
+  }
+  
+  whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
