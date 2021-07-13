@@ -60,7 +60,7 @@ whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: 
 
 function whatIsInAName(collection, source) {
     let keys = Object.keys(source)
-    return collection.filter(function(obj) { //filter the collection
+    return collection.filter(function(obj) {
       for (let i = 0; i < keys.length; i++) {
         if (!obj.hasOwnProperty(keys[i]) || obj[keys[i]] !== source[keys[i]]) {
           return false
