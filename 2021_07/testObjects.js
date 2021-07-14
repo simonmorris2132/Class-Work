@@ -13,3 +13,11 @@ for (let i = 0; i < fruitNames.length; i++) {
 }
 
 console.log(fruits)
+
+fruits.forEach((fruit, i) => {
+    
+    fruits[i] = {...fruit, Profit: fruit.Price * fruit.Sales}
+
+})
+
+console.log(fruits)
