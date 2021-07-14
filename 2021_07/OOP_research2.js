@@ -41,7 +41,6 @@ function whatIsInAName(collection, source) {
 
     for (let i = 0; i < collection.length; i++) {
         const testObj = collection[i];
-
         let passedTest = true;
         console.log(source, 'test:',testObj)
         for (const key in source) {
