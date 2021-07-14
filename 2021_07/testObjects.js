@@ -23,7 +23,7 @@ fruits.forEach((fruit, i) => {
 console.log(fruits)
 
 
-const members = ['j', 'm', 't', 'g', 's', 'h', 'y']
+/* const members = ['j', 'm', 't', 'g', 's', 'h', 'y']
 
 const team1 = []
 const team2 = []
@@ -45,4 +45,4 @@ while (team2.length > 4) {
     team1.push(team2.pop())
 }
 
-console.log(team1, team2)
+console.log(team1, team2) */
