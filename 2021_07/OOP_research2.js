@@ -26,7 +26,7 @@ whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: 
 
 function whatIsInAName(collection, source) {
     var arr = [];
-    // Only change code below this line
+    
   /* 
     collection.forEach( testObj => {
         console.log(testObj)
