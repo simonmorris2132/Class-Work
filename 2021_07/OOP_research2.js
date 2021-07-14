@@ -13,7 +13,7 @@ You can expect only positive integers for vote counts.
 */
 
 function getVoteCount(votes) {
-	
+	jjjjjj
 }
 
 /* 
