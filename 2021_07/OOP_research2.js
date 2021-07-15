@@ -16,7 +16,7 @@ You can expect only positive integers for vote counts.
     const vote = {upvotes: 12, downvotes: 0 } 
 	return  upvotes - downvotes                        /*I hate you gabe for cursing me on this day*/
 
-}
+//}
 //console.log(vote);
 /* 
 Make a function that looks through an array of objects (first argument) and returns an array of all objects that have matching name and value pairs (second argument). Each name and value pair of the source object has to be present in the object from the collection if it is to be included in the returned array.
@@ -75,4 +75,20 @@ fiftyThirtyTwenty(50000) ➞ { "Needs": 25000, "Wants": 15000, "Savings": 10000 
 
 fiftyThirtyTwenty(13450) ➞ { "Needs": 6725, "Wants": 4035, "Savings": 2690 } 
 */
+
+function fiftyThirtyTwenty(ati) {
+	
+    let ten = ati / 10
+    let needs = ten * 5
+    let wants = ten * 3
+    let savings = ten * 2
+
+    const tai = {
+        'Needs' : needs,
+        'Wants' : wants,
+        'Savings' : savings
+    }
+    return (tai)
+}
+
 
