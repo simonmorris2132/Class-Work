@@ -520,4 +520,9 @@ let departments = [
     [10035,66584,"2000-09-02","2001-09-02"],
   ]
 
-
+function Department(id, name, totalEmployees, genders) { 
+  this.id = id;
+  this.name = name;
+  this.totalEmployees = totalEmployees;
+  this.genders = genders;
+}
