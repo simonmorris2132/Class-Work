@@ -526,3 +526,14 @@ function Department(id, name, totalEmployees, genders) {
   this.totalEmployees = totalEmployees;
   this.genders = genders;
 }
+
+function Employee(id, fullName, gender, birthday, hireDate, isStillEmployeed, departmentsWorkedFor, mostRecentSalary) {
+  this.id = id
+  this.fullName = fullName
+  this.gender = gender
+  this.birthday = birthday
+  this.hireDate = hireDate
+  this.isStillEmployeed = isStillEmployeed
+  this.departmentsWorkedFor = departmentsWorkedFor
+  this.mostRecentSalary = mostRecentSalary
+}
