@@ -1,4 +1,10 @@
 /*
+ 
+ 01001101 01100001 01101110 01101110 01111001  01100001 01101110 01100100  01010011 01101001 01101101 01101111 01101110 
+ 
+*/
+
+/*
 Step 1: Download the department data from the Google Classroom assignment. This is the same data we have worked with previously.
 
 Step 2: add your name and your partner/s name/s to the top of your document.
@@ -520,9 +526,10 @@ let departments = [
     [10035,66584,"2000-09-02","2001-09-02"],
   ]
 
-function Department(id, name, totalEmployees, genders) { 
+//departent constructor
+function Department(id, names, totalEmployees, genders) { 
   this.id = id;
-  this.name = name;
+  this.names = names;
   this.totalEmployees = totalEmployees;
   this.genders = genders;
 }
@@ -537,3 +544,64 @@ function Employee(id, fullName, gender, birthday, hireDate, isStillEmployeed, de
   this.departmentsWorkedFor = departmentsWorkedFor
   this.mostRecentSalary = mostRecentSalary
 }
+
+let depOne = new Department(departments[0][0], departments[0][1])
+
+
+//gets the data for the specified department
+function getDepData(depID) {
+
+  let id, names, totalEmployees = [], gender = {male: 0, female: 0}
+
+  /*sets department objects name and id by comparing it to the function parameter*/
+
+  for (let i = 0; i < departments.length; i++) {
+   
+    if (depID == departments[i][0]) {
+
+      names = departments[i][1]
+      id = departments[i][0]
+
+    }
+    
+  }
+
+  /* add to employee count for everyone that matches */
+  for (let i = 0; i < employeeDepartment.length; i++) {
+    
+    if (depID == employeeDepartment[i][1]) {
+
+      //console.log(employeeDepartment[i]);
+      totalEmployees.push(employeeDepartment[i][0])
+
+    }
+    
+  }
+
+  for (let i = 0; i < totalEmployees.length; i++) {
+    
+    for (let j = 0; j < employees.length; j++) {
+      
+      if (totalEmployees[i] == employees[j][0] && employees[j][4] == 'M') {
+        
+        gender.male++
+
+      } else if ((totalEmployees[i] == employees[j][0] && employees[j][4] == 'F')) {
+        gender.female++
+      }
+      
+    }
+    
+  }
+
+
+  return new Department(id, names, totalEmployees.length, gender)
+}
+
+//loops through department ids
+for (let i = 0; i < departments.length; i++) {
+  
+  console.log(getDepData(departments[i][0]));
+  
+}
+
