@@ -560,7 +560,7 @@ function getDepData(depID) {
     if (depID == departments[i][0]) {
 
       names = departments[i][1]
-      id = departments[i][0]
+      
 
     }
     
@@ -595,13 +595,63 @@ function getDepData(depID) {
   }
 
 
-  return new Department(id, names, totalEmployees.length, gender)
+  return new Department(depID, names, totalEmployees.length, gender)
 }
 
 //loops through department ids
-for (let i = 0; i < departments.length; i++) {
+/* for (let i = 0; i < departments.length; i++) {
   
   console.log(getDepData(departments[i][0]));
   
+} */
+
+//gets employee data
+function getEmpData(empID) {
+  
+  let names, birthday, gender, hireDate = [], isStillEmployeed, departmentsWorkedFor = [], mostRecentSalary
+
+  let salaries = []
+
+for (let i = 0; i < employees.length; i++) {
+  
+  if (empID == employees[i][0]) {
+    
+    names = {firstName: employees[i][2], lastName: employees[i][3]}
+  
+  birthday = employees[i][1]
+
+  gender = employees[i][4]
+
+  hireDate.push(employees[i][5])
+
+  
+  }
+  
+}  
+
+for (let i = 0; i < employeeDepartment.length; i++) {
+  if (employeeDepartment[i][3] !== "9999-01-01" && empID == employeeDepartment[i][0]) {
+    isStillEmployeed = false
+  } else {
+    isStillEmployeed = true
+  }    
+  if (empID == employeeDepartment[i][0]) {
+    departmentsWorkedFor.push(employeeDepartment[i][1])
+  }
 }
 
+for (let i = 0; i < employeeSalaries.length; i++) {
+  if (empID == employeeSalaries[i][0]) {
+    salaries.push(employeeSalaries[i][1])
+  }
+}
+
+mostRecentSalary = salaries[salaries.length - 1]
+
+  return new Employee(empID, names, gender, birthday, hireDate, isStillEmployeed, departmentsWorkedFor, mostRecentSalary)
+}
+
+console.log(getEmpData(employees[0][0]))
+
+
+ 
