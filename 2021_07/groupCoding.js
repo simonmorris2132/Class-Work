@@ -592,9 +592,7 @@ function getDepData(depID) {
     }
     
   }
-
-
-  return new Department(depID, names, totalEmployees.length, gender)
+return new Department(depID, names, totalEmployees.length, gender)
 }
 
 //loops through department ids
