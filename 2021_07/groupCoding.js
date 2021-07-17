@@ -613,7 +613,7 @@ for (let i = 0; i < employees.length; i++) {
   
   if (empID == employees[i][0]) {
     
-    names = {firstName: employees[i][2], lastName: employees[i][3]}
+  names = {firstName: employees[i][2], lastName: employees[i][3]}
   
   birthday = employees[i][1]
 
@@ -621,7 +621,6 @@ for (let i = 0; i < employees.length; i++) {
 
   hireDate.push(employees[i][5])
 
-  
   }
   
 }  
