@@ -594,7 +594,7 @@ function getDepData(depID) {
   }
 return new Department(depID, names, totalEmployees.length, gender)
 }
-
+console.log(getDepData(departments[0][0]))
 //loops through department ids
 /* for (let i = 0; i < departments.length; i++) {
   
