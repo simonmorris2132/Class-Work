@@ -561,7 +561,6 @@ function getDepData(depID) {
 
       names = departments[i][1]
       
-
     }
     
   }
