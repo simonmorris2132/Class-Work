@@ -1,7 +1,9 @@
 package com.company;
 
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Locale;
 
 public class Main {
     /* modifiers are basically things that give access to classes, fields, or methods. static is a different kind of modifier. We can use fields without stating the class. Void means that after the program runs, nothing else should follow. Void is a return-type. main() is the name of the function, and inside of it's parenthesis is the arguments. */
@@ -22,8 +24,9 @@ public class Main {
         String[] splitInput = input.split(" ");
 
         for (int i =0; i < splitInput.length; i++) {
-            System.out.println(splitInput[i]);
-            splitInput[i] = i + " ";
+            System.out.println(splitInput[i].toUpperCase().substring(0, 1) + "" + splitInput[i].toLowerCase().substring(1));
+            splitInput[i] = splitInput[i].toUpperCase().substring(0, 1) + "" + splitInput[i].toLowerCase().substring(1);
+            //splitInput[i] = i + " ";
 
         }
         System.out.println(Arrays.toString(splitInput));
