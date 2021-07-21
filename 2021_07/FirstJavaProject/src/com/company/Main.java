@@ -24,9 +24,8 @@ public class Main {
         String[] splitInput = input.split(" ");
 
         for (int i =0; i < splitInput.length; i++) {
-            System.out.println(splitInput[i].toUpperCase().substring(0, 1) + "" + splitInput[i].toLowerCase().substring(1)); //pushing each word in the string from the main method and making each first letter a capital
-            splitInput[i] = splitInput[i].toUpperCase().substring(0, 1) + "" + splitInput[i].toLowerCase().substring(1); //assigning the previous code to the splitInput variable
-            //splitInput[i] = i + " ";
+            System.out.println(splitInput[i].toUpperCase().substring(0, 1) + "" + splitInput[i].toLowerCase().substring(1)); /*pushing each word in the string from the main method and making each first letter a capital*/
+            splitInput[i] = splitInput[i].toUpperCase().substring(0, 1) + "" + splitInput[i].toLowerCase().substring(1); /*assigning the previous code to the splitInput variable splitInput[i] = i + " ";*/
 
         }
         System.out.println(splitInput);
