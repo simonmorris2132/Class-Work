@@ -1,7 +1,7 @@
 package com.company;
 
 
-public class Main {
+public class TitleCase {
     /* modifiers are basically things that give access to classes, fields, or methods. static is a different kind of modifier. We can use fields without stating the class. Void means that after the program runs, nothing else should follow. Void is a return-type. main() is the name of the function, and inside of it's parenthesis is the arguments. */
     public static void main(String[] args) {
 
@@ -34,4 +34,16 @@ public class Main {
         return newStr;
     }
 
+}
+
+public class fahrenConversion {
+
+    public static void main(String[] args) {
+        //initializing
+        double celsius = 10.0, fahrenheit = 0.0;
+
+        //conversion
+        fahrenheit = (celsius * 1.7) + 32;
+        System.out.println("The value of temperature in fahrenheit is: " + fahrenheit);
+    }
 }
