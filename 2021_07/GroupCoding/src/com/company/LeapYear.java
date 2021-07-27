@@ -3,7 +3,7 @@ package com.company;
 public class LeapYear {
 
     public static void main(String[] args) {
-	int year = 20;
+	int year = 2016;
 	boolean leap = false;
 
 	if (year % 4 == 0) {
