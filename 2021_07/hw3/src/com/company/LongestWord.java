@@ -8,8 +8,7 @@ public class LongestWord {
     public String compare (String st1, String st2) {
         if (st1.length() > st2.length()) {
             return st1;
-        }
-        else {
+        } else {
             return st2;
         }
     }
