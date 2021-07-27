@@ -2,7 +2,7 @@ package com.company;
 
 public class IsLeap {
 
-    public static void main(String[] args) {
+    public static void isLeap(String[] args) {
 	int year = 2016;
 	boolean leap = false;
 
