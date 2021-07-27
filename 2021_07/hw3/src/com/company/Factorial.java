@@ -27,7 +27,5 @@ public class Factorial {
             }
             System.out.printf("%d! = %d", number, factorial);
         }
-
     }
-
 }
