@@ -1,6 +1,6 @@
 package com.company;
 
-public class LeapYear {
+public class IsLeap {
 
     public static void main(String[] args) {
 	int year = 2016;
