@@ -35,9 +35,16 @@ public class Main {
         Fruit fruit3 = new Fruit("Oranges", 350, 70, 66);
         fruit1.addInventory(5);
         System.out.println(fruit1.getqAvailable());
+        fruit1.purchase(6);
+        System.out.println(fruit1.getqAvailable());
 
+        fruit2.addInventory(4);
         fruit2.purchase(10);
         System.out.println(fruit2.getqAvailable());
+
+        fruit3.addInventory(5);
+        fruit3.purchase(8);
+        System.out.println(fruit3.getqAvailable());
 
     }
 }
