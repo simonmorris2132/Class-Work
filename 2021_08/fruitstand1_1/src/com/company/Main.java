@@ -32,13 +32,13 @@ public class Main {
 
             Fruit fruits = new Fruit ( null,null,0,0 );
 
-            System.out.print ("Please enter Fruit Type (ex. Orange): ");
+            System.out.print ("Please enter Fruit Type: ");
             fruits.fruitType = input.nextLine();
-            System.out.print ("Please enter Fruit Name (ex. Clementine): ");
+            System.out.print ("Please enter Fruit Name: ");
             fruits.name = input.nextLine();
-            System.out.print ("Please enter Fruit Price (ex. 1.99): ");
+            System.out.print ("Please enter Fruit Price: ");
             fruits.price = input.nextFloat();
-            System.out.print ("Please enter the Quantity Available (ex. 12 ): ");
+            System.out.print ("Please enter the Quantity Available: ");
             fruits.quantAvailable = input.nextInt();
             saveOutput (fruits);
             System.out.print ("Would you like to add another fruit? (Y/N) ");

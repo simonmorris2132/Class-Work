@@ -1,6 +1,5 @@
 package com.company;
 
-
 import java.io.Serializable;
 
 public class Fruit implements Serializable {
@@ -34,11 +33,10 @@ public class Fruit implements Serializable {
         quantAvailable += bought;
     }
 
-    //could be float but doesnt have use now
     void getProfit(){
         System.out.println (name +" has to made $" + profit);
     }
-    //could be float but doesnt have use now
+
     void getPotentialProfit(){
         float potentialProfit = quantAvailable * price;
         System.out.println (name +" has a potential to make $" + potentialProfit);
