@@ -6,7 +6,7 @@ public class UserInput
 {
     static void saveOutput(Fruit val) throws FileNotFoundException,IOException {
 
-        ObjectOutputStream out = new ObjectOutputStream ( new FileOutputStream ( "fruitData.txt" ) );
+        ObjectOutputStream out = new ObjectOutputStream (new FileOutputStream ("fruitData.txt"));
 
         out.writeObject ( val );
     }
