@@ -17,9 +17,9 @@ public class Stand {
         ArrayList <Fruit> fruitTypeArr = new ArrayList<>();
 
         for (Fruit i: inventory) {
-            if (i.fruitType == val) fruitTypeArr.add ( i );
+            if (i.fruitType == val) fruitTypeArr.add(i);
         }
-        System.out.println (fruitTypeArr);
+        System.out.println(fruitTypeArr);
     }
 
 
@@ -32,7 +32,7 @@ public class Stand {
         } else {
             System.out.println ("The Stand has " + inventory.size () + " items in its inventory");
             for (Fruit i: inventory) {
-                System.out.println (i);
+                System.out.println(i);
             }
         }
     }

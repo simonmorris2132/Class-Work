@@ -18,7 +18,7 @@ public class Fruit implements Serializable {
         int qSold = this.quantSold;
         this.name = name;
         this.fruitType = fruitType;
-        Stand.inventory.add (this);
+        Stand.inventory.add(this);
 
     }
 
