@@ -3,7 +3,6 @@ package com.company;
 
 import java.io.IOException;
 import java.util.Scanner;
-import static com.company.UserInput.saveOutput;
 
 public class Main {
 
@@ -40,7 +39,6 @@ public class Main {
             fruits.price = input.nextFloat();
             System.out.print ("Please enter the Quantity Available: ");
             fruits.quantAvailable = input.nextInt();
-            saveOutput (fruits);
             System.out.print ("Would you like to add another fruit? (Y/N) ");
             String check2 = input.next();
             addMoreFruit = false;
