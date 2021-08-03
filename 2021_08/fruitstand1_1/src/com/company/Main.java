@@ -9,9 +9,9 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        Fruit fruitOne = new Fruit ( "Grape","Cotton Candy",4.99f,20);
-        Fruit fruitTwo = new Fruit ( "Oranages", "Blood Orange",2.99f,20);
-        Fruit fruitThree = new Fruit ( "Apple","Fuji",0.99f,20);
+        Fruit fruit1 = new Fruit ( "Grape","Cotton Candy",4.99f,20);
+        Fruit fruit2 = new Fruit ( "Oranages", "Blood Orange",2.99f,20);
+        Fruit fruit3 = new Fruit ( "Apple","Fuji",0.99f,20);
 
 
         Scanner input = new Scanner ( System.in );

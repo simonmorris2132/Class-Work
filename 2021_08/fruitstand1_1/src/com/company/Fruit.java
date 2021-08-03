@@ -11,7 +11,7 @@ public class Fruit implements Serializable {
     int quantAvailable;
     float profit;
 
-    public Fruit  (String fruitType, String name, float price, int quantityAvailable) {
+    public Fruit (String fruitType, String name, float price, int quantityAvailable) {
 
         this.price = price;
         this.quantAvailable = quantityAvailable;
