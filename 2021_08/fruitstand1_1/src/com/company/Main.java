@@ -14,23 +14,23 @@ public class Main {
         Fruit fruit3 = new Fruit ( "Apple","Fuji",0.99f,20);
 
 
-        Scanner input = new Scanner ( System.in );
+        Scanner input = new Scanner (System.in);
         int count = 0;
 
         boolean addMoreFruit = false;
 
         System.out.print ("Would you like to add items to inventory?: (Y/N) ");
 
-        String check = input.nextLine ();
+        String check = input.nextLine();
 
-        switch (check){
+        switch (check) {
             case "Y", "y", "Yes", "yes" -> addMoreFruit = true;
             default -> System.out.println ( "No items have been added to inventory!" );
         }
 
-        while (addMoreFruit){
+        while (addMoreFruit) {
 
-            Fruit fruits = new Fruit ( null,null,0,0 );
+            Fruit fruits = new Fruit (null,null,0,0);
 
             System.out.print ("Please enter Fruit Type: ");
             fruits.fruitType = input.nextLine();

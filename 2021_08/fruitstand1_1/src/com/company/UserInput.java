@@ -8,6 +8,6 @@ public class UserInput
 
         ObjectOutputStream out = new ObjectOutputStream (new FileOutputStream ("fruitData.txt"));
 
-        out.writeObject ( val );
+        out.writeObject (val);
     }
 }
