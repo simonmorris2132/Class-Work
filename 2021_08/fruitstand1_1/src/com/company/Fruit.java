@@ -22,7 +22,7 @@ public class Fruit implements Serializable {
 
     }
 
-    void remQuantity(int sold){
+    void Quantity(int sold){
         quantSold += sold;
         quantAvailable -= sold;
         profit = quantSold * price;
