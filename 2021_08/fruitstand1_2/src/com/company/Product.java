@@ -11,12 +11,13 @@ public class Product {
    private boolean isRotten;
    private String productType;
 
-    public Product(float prices, int quantAvailable, int quantSold, String name) {
+    public Product(float prices, int quantAvailable, int quantSold, String name, String types) {
 
         this.price = prices;
         this.productName = name;
         this.qAvailable = quantAvailable;
         this.qSold = quantSold;
+        this.productType = types;
 
     }
 

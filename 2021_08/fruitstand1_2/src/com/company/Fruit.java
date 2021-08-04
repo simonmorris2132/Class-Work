@@ -7,9 +7,8 @@ public class Fruit extends Product {
     private String[] flavorTypes = {"Sweet", "Sour", "Bitter", "Nutty", "Tangy"};
     private String color;
 
-    public Fruit(String name, float prices, int quantAvailable, int quantSold, int flavIndex, String colors) {
-        super(prices, quantAvailable, quantSold, name);
-        this.color = colors;
+    public Fruit(String name, float prices, int quantAvailable, int quantSold, int flavIndex, String types) {
+        super(prices, quantAvailable, quantSold, name, types);
         this.flavor = flavorTypes[flavIndex];
     }
 
