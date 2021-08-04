@@ -4,7 +4,7 @@ public class Fruit extends Product {
 
 
     private String flavor;
-    private String[] flavorTypes = {"Sweet", "Sour", "Bitter", "Nutty", "Tangy"};
+    private static String[] flavorTypes = {"Sweet", "Sour", "Bitter", "Nutty", "Tangy"};
     private String color;
 
     public Fruit(String name, float prices, int quantAvailable, int quantSold, int flavIndex, String types) {

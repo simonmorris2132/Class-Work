@@ -36,7 +36,4 @@ public class Product {
         qAvailable -= sold;
         qSold += sold;
     }
-
-
-
 }
