@@ -8,6 +8,8 @@ public class Product {
    private int qAvailable;
    private float profit;
    private int potentialProfit = (int) (profit * price);
+   private boolean isRotten;
+   private String productType;
 
     public Product(float prices, int quantAvailable, int quantSold, String name) {
 
@@ -33,5 +35,7 @@ public class Product {
         qAvailable -= sold;
         qSold += sold;
     }
+
+
 
 }
