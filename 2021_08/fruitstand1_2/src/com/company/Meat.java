@@ -18,4 +18,8 @@ public class Meat extends Product {
         System.out.println(grade);
     }
 
+    void getWeight() {
+        System.out.println(weight);
+    }
+
 }

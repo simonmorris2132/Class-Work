@@ -2,11 +2,11 @@ package com.company;
 
 public class Product {
 
-   private float price;
-   private String productName;
-   private int qSold;
-   private int qAvailable;
-   private float profit;
+   float price;
+   String names;
+   int qSold;
+   int qAvailable;
+   float profit;
    private int potentialProfit = (int) (profit * price);
    private boolean isRotten;
    private String productType;
@@ -14,7 +14,7 @@ public class Product {
     public Product(float prices, int quantAvailable, int quantSold, String name, String types) {
 
         this.price = prices;
-        this.productName = name;
+        this.names = name;
         this.qAvailable = quantAvailable;
         this.qSold = quantSold;
         this.productType = types;
