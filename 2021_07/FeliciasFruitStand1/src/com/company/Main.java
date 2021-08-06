@@ -34,10 +34,19 @@ public class Main {
         Fruit fruit2 = new Fruit("Mango", 300, 63, 50);
         Fruit fruit3 = new Fruit("Oranges", 350, 70, 66);
         fruit1.addInventory(5);
-        System.out.println(fruit1.getqAvailable());
+        System.out.println("These are the amount available: " + fruit1.getqAvailable());
+        fruit1.purchase(6);
+        System.out.println("These are the amount after sale: " + fruit1.getqAvailable());
 
+        fruit2.addInventory(4);
+        System.out.println("These are the amount available: " + fruit2.getqAvailable());
         fruit2.purchase(10);
-        System.out.println(fruit2.getqAvailable());
+        System.out.println("These are the amount after sale: " + fruit2.getqAvailable());
+
+        fruit3.addInventory(5);
+        System.out.println("These are the amount available: " + fruit3.getqAvailable());
+        fruit3.purchase(8);
+        System.out.println("These are the amount after sale: " + fruit3.getqAvailable());
 
     }
 }
