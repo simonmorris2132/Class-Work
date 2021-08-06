@@ -6,14 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
         Fruit fruit1 = new Fruit("Apple", 1.50F, 20, 24, 0, "Gala");
-        fruit1.getFlavor();
         Fruit fruit2 = new Fruit("Grape", 3.00F, 60, 10, 1, "Sour");
-        fruit2.getFlavor();
         Fruit fruit3 = new Fruit("Orange", 3.50F, 45, 25, 0, "Clementine");
-
-        Meat meat1 = new Meat("Ham", 3.50F, 2, 1, 50, 30, "Pork");
-        Meat meat2 = new Meat("Chicken", 4.00F, 5, 1, 5, 5, "Breast");
-
 
         Scanner input = new Scanner (System.in);
         int count = 0;
@@ -32,7 +26,6 @@ public class Main {
         while (addMoreFruit) {
 
             Fruit fruityies = new Fruit (null,0,0,0, 0, null);
-            Meat meaties = new Meat(null, 0, 0, 0, 0, 0, null);
 
             System.out.print ("Please enter Product Name: ");
             fruityies.names = input.nextLine();

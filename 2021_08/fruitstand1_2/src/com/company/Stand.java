@@ -16,10 +16,10 @@ public class Stand {
         if (inventory.isEmpty()) {
             System.out.println ( "Inventory is Empty" );
         } else if (inventory.size() == 1) {
-            System.out.println ("The Stand has " + inventory.size () + " item in its inventory");
+            System.out.println ("The Stand has " + inventory.size() + " item in its inventory");
             System.out.println (inventory);
         } else {
-            System.out.println ("The Stand has " + inventory.size () + " items in its inventory");
+            System.out.println ("The Stand has " + inventory.size() + " items in its inventory");
             for (Fruit i: inventory) {
                 System.out.println(i);
             }

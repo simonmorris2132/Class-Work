@@ -2,7 +2,6 @@ package com.company;
 
 public class Fruit extends Product {
 
-
     private String flavor;
     private static String[] flavorTypes = {"Sweet", "Sour", "Bitter", "Nutty", "Tangy"};
     private String color;
@@ -20,10 +19,6 @@ public class Fruit extends Product {
         System.out.println(flavor);
     }
 
-    boolean checkColor(String clr) {
-        if (color == clr) {
-            return true;
-        } else return false;
-    }
+
 
 }
