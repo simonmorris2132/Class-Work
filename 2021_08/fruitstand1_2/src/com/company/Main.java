@@ -6,8 +6,11 @@ public class Main {
 
     public static void main(String[] args) {
         Fruit fruit1 = new Fruit("Apple", 1.50F, 20, 24, 0, "Gala");
+        fruit1.getFlavor();
         Fruit fruit2 = new Fruit("Grape", 3.00F, 60, 10, 1, "Sour");
+        fruit2.getFlavor();
         Fruit fruit3 = new Fruit("Orange", 3.50F, 45, 25, 0, "Clementine");
+        fruit3.getFlavor();
 
         Scanner input = new Scanner (System.in);
         int count = 0;
