@@ -23,6 +23,15 @@
 		},
 		{
 			"path": "2021_08"
+		},
+		{
+			"path": "2021_09"
+		},
+		{
+			"path": "2021_09\\InterChallenge"
+		},
+		{
+			"path": "2021_09\\DepDataJava"
 		}
 	],
 	"settings": {}
