@@ -536,22 +536,22 @@ static String[][]  employeeSalaries = {
         }
 
         //Challenge 2
-       /*  String ID = "";
+        String ID = "";
         String salaries = "";
         String largestSalaries = "";
 
         for (int i = 0; i < employeeSalaries.length; i++) {
             for (int j = 0; j < employeeSalaries[i].length; j++) {
-                if (ID.indexOf(employeeSalaries[j][0]) == -1 + employeeSalaries[j][1] > "60000") {
+                if (ID.indexOf(employeeSalaries[j][0]) == -1 + employeeSalaries[j][1].compareTo("60000")) {
                     ID = employeeSalaries[j][0];
+                    System.out.println(ID);
                 }
             }
         }
-        System.out.println(ID);
-
+        
         
 
-        for (int i = 0; i < ID.length(); i++) {
+/*         for (int i = 0; i < ID.length(); i++) {
             String largestSalary = "";
             for (int j = 0; j < employeeSalaries.length; j++) {
                 if (employeeSalaries[j][0] == ID && employeeSalaries[j][1] > largestSalary) {

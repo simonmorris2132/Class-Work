@@ -1,4 +1,4 @@
-package com.company;
+package DiceWars.src.com.company;
 
 @SuppressWarnings("all")
 

@@ -1,7 +1,7 @@
 /* This class is where all the mechanics of the game lie. every other class is used in this class to make the game work. */
 
 
-package com.company;
+package DiceWars.src.com.company;
 
 import java.util.ArrayList;
 
