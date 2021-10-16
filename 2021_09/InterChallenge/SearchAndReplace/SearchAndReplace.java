@@ -8,6 +8,7 @@ public class SearchAndReplace {
         
         String searchThru = "The quick brown fox jumped over the brown log.";
         String replaceWith = "leaped";
+        String[] searchThruArr = searchThru.split(" ");
 
     }
     
