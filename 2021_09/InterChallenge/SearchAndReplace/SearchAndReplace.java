@@ -10,6 +10,10 @@ public class SearchAndReplace {
         String replaceWith = "leaped";
         String[] searchThruArr = searchThru.split(" ");
 
+        for (int i = 0; i < searchThruArr.length; i++) {
+            
+        }
+
     }
     
 }

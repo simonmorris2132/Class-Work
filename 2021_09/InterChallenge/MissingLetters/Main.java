@@ -1,9 +1,9 @@
-package InterChallenge.SearchAndReplace;
+package InterChallenge.MissingLetters;
 
 @SuppressWarnings("ALL")
 
 public class Main {
     public static void main(String[] args) {
-        SearchAndReplace.run();
+        MissingLetters.run();
     }
 }

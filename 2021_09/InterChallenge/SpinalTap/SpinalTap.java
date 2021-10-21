@@ -1,18 +1,27 @@
 package InterChallenge.SpinalTap;
 
-import java.util.Scanner;
-
 public class SpinalTap {
     public static void run() {
-        Scanner scanner = new Scanner(System.in);
-        String str = scanner.nextLine();
+        String str = "Hi my name is BrettMarcotte";
         String[] strArr = str.split(" ");
         String newStr = "";
-        
+
         for (int i = 0; i < strArr.length; i++) {
-            newStr += strArr[i].substring(0, 1) + strArr[i].substring(1) + "-";
+            String newWord = "";
+            for (int j = 0; j < strArr[i].length(); j++) {
+                if (strArr[i].charAt(j) > 64 && strArr[i].charAt(j) < 97 && j != 0) {
+                    newWord += "-";
+                }
+                newWord += strArr[i].charAt(j);
+            }
+            // System.out.println(newWord);
+            if (i < 4) {
+                newStr += newWord + "-";
+            } else {
+                newStr += newWord;
+            }
         }
-        System.out.println(newStr.trim());
+        System.out.println(newStr.toLowerCase());
     }
 }
 
