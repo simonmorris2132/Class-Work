@@ -569,14 +569,13 @@ for (let i = 0; i < employeeSalaries.length; i++) {
 }
 console.log(ID)
 
- for (let i = 0; i < ID.length; i++) {
-let largestSalary = 0
-for (let j = 0; j < employeeSalaries.length; j++) {
- if (employeeSalaries[j][0] == ID[i] && employeeSalaries[j][1] > largestSalary) {
-   largestSalary = employeeSalaries[j][1]
- }
-  
-}
+for (let i = 0; i < ID.length; i++) {
+  let largestSalary = 0
+  for (let j = 0; j < employeeSalaries.length; j++) {
+    if (employeeSalaries[j][0] == ID[i] && employeeSalaries[j][1] > largestSalary) {
+      largestSalary = employeeSalaries[j][1]
+    }
+  }
   largestSalaries.push(largestSalary)
   salary.push([ID[i], largestSalaries[i]])
 }
