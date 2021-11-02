@@ -1,10 +1,12 @@
 package Edabit.WordCount;
 
+@SuppressWarnings("ALL")
+
 public class WordCount {
     
     public static void run() {
         
-        System.out.println(countWords("Hello m(y) name is johnny."));
+        System.out.println(countWords("Hello my name is johnny."));
 
     }
 

@@ -1,5 +1,7 @@
 package Edabit.MultipleOfHundred;
 
+@SuppressWarnings("ALL")
+
 public class Mutiple {
     
     public static void run() {

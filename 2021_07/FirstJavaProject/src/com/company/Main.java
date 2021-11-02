@@ -43,7 +43,7 @@ public class fahrenConversion {
         double celsius = 10.0, fahrenheit = 0.0;
 
         //conversion
-        fahrenheit = (celsius * 1.7) + 32;
+        fahrenheit = (celsius * 1.8) + 32;
         System.out.println("The value of temperature in fahrenheit is: " + fahrenheit);
     }
 }

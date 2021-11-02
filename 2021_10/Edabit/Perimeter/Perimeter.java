@@ -1,5 +1,7 @@
 package Edabit.Perimeter;
 
+@SuppressWarnings("ALL")
+
 public class Perimeter {
     
     public static void run() {
