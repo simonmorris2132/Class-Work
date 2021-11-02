@@ -74,5 +74,7 @@
 			"path": "2021_10"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
 }

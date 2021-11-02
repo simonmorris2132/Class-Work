@@ -2,6 +2,7 @@ package com.example.firstServer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+<<<<<<< HEAD
 
 @SpringBootApplication
 public class FirstServerApplication {
@@ -11,3 +12,25 @@ public class FirstServerApplication {
 	}
 
 }
+=======
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@SpringBootApplication
+@RestController
+public class FirstServerApplication {
+  
+	
+	public static void main(String[] args) {
+	SpringApplication.run(FirstServerApplication.class, args);
+	}
+	
+	@GetMapping("/hello")
+	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
+	return String.format("Hello %s!", name);
+	}
+  
+}
+
+>>>>>>> e5f93183e2d5e08322161319d959c8a7908dafad
