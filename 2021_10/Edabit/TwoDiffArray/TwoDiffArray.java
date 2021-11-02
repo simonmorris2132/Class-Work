@@ -1,5 +1,5 @@
 package Edabit.TwoDiffArray;
-
+@SuppressWarnings("ALL")
 public class TwoDiffArray {
     static int[] arr1 = {1, 2, 3, 4, 5};
     static int m = arr1.length;
