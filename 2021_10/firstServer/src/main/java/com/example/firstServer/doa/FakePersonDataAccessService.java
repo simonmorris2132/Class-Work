@@ -1,11 +1,10 @@
 package com.example.firstServer.doa;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 import com.example.firstServer.model.Person;
-
-import scala.collection.immutable.List;
 
 public class FakePersonDataAccessService implements PersonDao {
     
