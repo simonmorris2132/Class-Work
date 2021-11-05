@@ -1,7 +1,5 @@
 package com.example.consumingrest;
 
-import javax.swing.plaf.TreeUI;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties.Value;
 
