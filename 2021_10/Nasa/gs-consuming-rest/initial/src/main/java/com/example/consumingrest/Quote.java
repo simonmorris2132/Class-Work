@@ -6,13 +6,12 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties.Value;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Quote {
     
-private String type;
-private Value value;
+    private String type;
+    private Value value;
 
     public Quote() {
 
     }
-
 
     public String getType() {
         return this.type;
