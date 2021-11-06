@@ -34,7 +34,7 @@ public class Quote {
         return "Quote{" +
             "type='" + type + '\'' +
             ", value=" + value +
-            "}";
+            '}';
     }
 
 }
