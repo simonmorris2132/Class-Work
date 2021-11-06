@@ -1,7 +1,6 @@
 package com.example.consumingrest;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties.Value;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Quote {
