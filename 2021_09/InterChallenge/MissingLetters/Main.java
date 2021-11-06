@@ -1,4 +1,4 @@
-package InterChallenge.MissingLetters;
+/* package InterChallenge.MissingLetters;
 
 @SuppressWarnings("ALL")
 
@@ -7,3 +7,4 @@ public class Main {
         MissingLetters.run();
     }
 }
+ */

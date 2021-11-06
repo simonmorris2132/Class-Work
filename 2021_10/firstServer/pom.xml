@@ -12,7 +12,11 @@
 	<artifactId>firstServer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>firstServer</name>
+<<<<<<< HEAD
 	<description>Server project for Spring Boot</description>
+=======
+	<description>First Server for Spring Boot</description>
+>>>>>>> 6d58daa750bf53b56fbec7d6f2a91d765c2abcc2
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -27,7 +31,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 	</dependencies>
+=======
+	
+   <dependency>
+     <groupId>org.scala-lang</groupId>
+     <artifactId>scala-library</artifactId>
+     <version>2.13.0</version>
+   </dependency>
+ </dependencies>
+>>>>>>> 6d58daa750bf53b56fbec7d6f2a91d765c2abcc2
 
 	<build>
 		<plugins>
