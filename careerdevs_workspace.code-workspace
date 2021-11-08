@@ -25,7 +25,6 @@
 			"path": "2021_08"
 		},
 		{
-<<<<<<< HEAD
 			"path": "TurncateAString"
 		},
 		{
@@ -60,18 +59,12 @@
 		},
 		{
 			"path": "DepDataJava"
-=======
-			"path": "2021_09"
-		},
-		{
-			"path": "2021_09\\InterChallenge"
-		},
-		{
-			"path": "2021_09\\DepDataJava"
->>>>>>> 983fa6373a5774eb9a3ca4b75b7b915617766da0
 		},
 		{
 			"path": "2021_10"
+		},
+		{
+			"path": "2021_11"
 		}
 	],
 	"settings": {
