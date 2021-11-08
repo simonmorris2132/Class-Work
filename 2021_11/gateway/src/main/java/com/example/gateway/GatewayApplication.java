@@ -1,8 +1,5 @@
 package com.example.gateway;
 
-import java.net.URI;
-import java.net.URL;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.client.RestTemplateBuilder;
