@@ -23,10 +23,10 @@ public class GatewayApplication {
 
 	@GetMapping("/")
 	public String rootRoute() {
-		return "Welcome Home!";
+		return "Welcome Home!"; /* This returns Welcome Home! on the home (root) page. GetMapping is requesting the root route at "/" */
 	}
 
-	@GetMapping("/apod")
+	@GetMapping("/apod") /* This gets the /apod part of the site and sets it up. It grabs resttemplate so it can GET things and taps into the APOD class to format it accordingly with the title and the url in which a video will be there, and the explanation. */
 	public APOD apodInfo(RestTemplate restTemplate) {
 		String URL = "https://api.nasa.gov/planetary/apod?api_key=8ffWsaa5x0qOUcPoo0FWwekN1XoPWgjLJuQa9uGJ";
 

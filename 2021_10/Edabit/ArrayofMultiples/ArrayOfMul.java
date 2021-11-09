@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ArrayOfMul {
     public static void run() {
-        System.out.println(Arrays.toString(arrayOfMultiples(6, 5)));
+        System.out.println(Arrays.toString(arrayOfMultiples(3, 5)));
     }
 
     static int[] arrayOfMultiples(int num, int length) {
