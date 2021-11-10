@@ -70,7 +70,9 @@
 	"settings": {
 		"java.configuration.updateBuildConfiguration": "automatic",
 		"java.project.sourcePaths": [
-			"edabit/UpvoteDownvote"
+			"edabit/UpvoteDownvote",
+			"edabit/OtherFolder",
+			"edabit"
 		]
 	}
 }
