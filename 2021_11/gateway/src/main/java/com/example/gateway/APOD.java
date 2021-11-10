@@ -1,7 +1,5 @@
 package com.example.gateway;
 
-import java.util.Set;
-
 public class APOD {
     
     private String date;
