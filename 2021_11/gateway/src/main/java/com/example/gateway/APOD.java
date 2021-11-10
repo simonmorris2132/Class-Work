@@ -5,10 +5,10 @@ import java.util.Set;
 public class APOD {
     
     private String date;
+    private String copyright;
     private String title;
     private String url;
     private String hdurl;
-    private String copyright;
     private String explanation;
 
     public String getDate() {
@@ -17,6 +17,14 @@ public class APOD {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public String getCopyright() {
+        return copyright;
+    }
+
+    public void setCopyright(String copyright) {
+        this.copyright = copyright;
     }
 
     public String getTitle() {
@@ -41,14 +49,6 @@ public class APOD {
 
     public void setHdurl(String hdurl) {
         this.hdurl = hdurl;
-    }
-
-    public String getCopyright() {
-        return copyright;
-    }
-
-    public void setCopyright(String copyright) {
-        this.copyright = copyright;
     }
 
     public String getExplanation() {
