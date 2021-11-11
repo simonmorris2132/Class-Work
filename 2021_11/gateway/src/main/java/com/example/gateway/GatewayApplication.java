@@ -36,9 +36,9 @@ public class GatewayApplication {
 
 	}
 
-	@GetMapping("/weather")
+	@GetMapping("/weather") /* Returns with weather route and displays all info from the free weather api for providence rhode island */
 	public Weather weatherInfo(RestTemplate restTemplate) {
-		String URL = "api.openweathermap.org/data/2.5/weather?q=Cranston,401&appid=cfc27e811208976be0555ea9425aec24";
+		String URL = "api.openweathermap.org/data/2.5/weather?q=providence,401&appid=cfc27e811208976be0555ea9425aec24";
 
 		Weather weather = restTemplate.getForObject(URL, Weather.class);
 
