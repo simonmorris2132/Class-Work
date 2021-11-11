@@ -36,13 +36,13 @@ public class GatewayApplication {
 
 	}
 
-	@GetMapping("/weather") /* Returns with weather route and displays all info from the free weather api for providence rhode island */
-	public Weather weatherInfo(RestTemplate restTemplate) {
-		String URL = "https://api.openweathermap.org/data/2.5/weather?q=providence,401&appid=cfc27e811208976be0555ea9425aec24";
+	@GetMapping("/dogs") /* returns with dog pictures */
+	public Dog dogInfo(RestTemplate restTemplate) {
+		String URL = "https://dog.ceo/api/breed/hound/images";
 
-		Weather weather = restTemplate.getForObject(URL, Weather.class);
+		Dog dog = restTemplate.getForObject(URL, Dog.class);
 
-		return weather;
+		return dog;
 	}
 
 }
