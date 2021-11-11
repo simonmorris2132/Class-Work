@@ -7,7 +7,6 @@ public class Weather {
     
     private String city;
     private String statecode;
-    private String temp;
     private String weather;
 
     public String getCity() {
@@ -24,14 +23,6 @@ public class Weather {
 
     public void setStatecode(String statecode) {
         this.statecode = statecode;
-    }
-
-    public String getTemp() {
-        return this.temp;
-    }
-
-    public void setTemp(String temp) {
-        this.temp = temp;
     }
 
     public String getWeather() {
