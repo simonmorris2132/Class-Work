@@ -36,13 +36,14 @@ public class GatewayApplication {
 
 	}
 
-	@GetMapping("/dogs") /* returns with dog pictures */
-	public Dog dogInfo(RestTemplate restTemplate) {
-		String URL = "https://dog.ceo/api/breed/hound/images";
+	@GetMapping("/cat")
+	public Cat catInfo(RestTemplate restTemplate) {
+		String URL = "api_key=f14cad53-fd14-42bd-9169-884664d3751d";
 
-		Dog dog = restTemplate.getForObject(URL, Dog.class);
+		Cat cat = restTemplate.getForObject(URL, Cat.class);
 
-		return dog;
+		return cat;
+
 	}
 
 }
