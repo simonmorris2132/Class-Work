@@ -36,7 +36,7 @@ public class GatewayApplication {
 
 	}
 
-	@GetMapping("/weather") /* Returns with weather route and displays all info from the free weather api for providence rhode island */
+	@GetMapping("/weather") /* Returns with weather route and displays all info from the free weather api */
 	public Weather weatherInfo(RestTemplate restTemplate) {
 		String URL = "http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=cfc27e811208976be0555ea9425aec24";
 
