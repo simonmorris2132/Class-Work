@@ -72,7 +72,8 @@
 		"java.project.sourcePaths": [
 			"edabit",
 			"edabit\\OtherFolder",
-			"edabit\\UpvoteDownvote"
+			"edabit\\UpvoteDownvote",
+			"ServerFromVideo"
 		]
 	}
 }
