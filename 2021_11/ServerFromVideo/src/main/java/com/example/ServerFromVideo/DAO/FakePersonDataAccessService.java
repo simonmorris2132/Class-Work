@@ -3,9 +3,10 @@ package com.example.ServerFromVideo.DAO;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
-
 import com.example.ServerFromVideo.Model.Person;
+import org.springframework.stereotype.Repository;
 
+@Repository("fakeDAO")
 public class FakePersonDataAccessService implements PersonDAO {
     
     private static List<Person> DB = new ArrayList<>();
