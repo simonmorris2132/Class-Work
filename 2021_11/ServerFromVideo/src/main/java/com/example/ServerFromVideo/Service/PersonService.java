@@ -1,5 +1,7 @@
 package com.example.ServerFromVideo.Service;
 
+import java.util.List;
+
 import com.example.ServerFromVideo.DAO.PersonDAO;
 import com.example.ServerFromVideo.Model.Person;
 
@@ -19,6 +21,10 @@ public class PersonService {
 
     public int addPerson(Person person) {
         return personDAO.insertPerson(person);
+    }
+
+    public List<Person> getAllPeople() {
+        return personDAO.selectAllPeople();
     }
 
 }

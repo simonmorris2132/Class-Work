@@ -1,5 +1,6 @@
 package com.example.ServerFromVideo.DAO;
 
+import java.util.List;
 import java.util.UUID;
 
 import com.example.ServerFromVideo.Model.Person;
@@ -12,5 +13,7 @@ public interface PersonDAO {
         UUID id = UUID.randomUUID();
         return insertPerson(id, person);
     }
+
+    List<Person> selectAllPeople();
 
 }
