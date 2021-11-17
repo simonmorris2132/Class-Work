@@ -1,10 +1,9 @@
-*.properties
-
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+*.properties
 
 ### STS ###
 .apt_generated
@@ -30,6 +29,7 @@ target/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
+*.properties
 
 ### VS Code ###
 .vscode/
