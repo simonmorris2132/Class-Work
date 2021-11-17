@@ -5,26 +5,18 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Weather {
     
-    private Weather[] weather;
     private Coordinate coord;
-
-    class weather { 
-        private String main;
-        private String description;
-    }
+    private Main main;
 
     class Coordinate {
-        private float lon;
-        private float lat;
+        public float lon;
+        public float lat;
     }
 
+    class Main {
+        public float temp;
+        public float feels_like;
 
-    public Weather[] getWeather() {
-        return this.weather;
-    }
-
-    public void setWeather(Weather[] weather) {
-        this.weather = weather;
     }
 
     public Coordinate getCoord() {
@@ -33,6 +25,14 @@ public class Weather {
 
     public void setCoord(Coordinate coord) {
         this.coord = coord;
+    }
+
+    public Main getMain() {
+        return this.main;
+    }
+
+    public void setMain(Main main) {
+        this.main = main;
     }
 
 
