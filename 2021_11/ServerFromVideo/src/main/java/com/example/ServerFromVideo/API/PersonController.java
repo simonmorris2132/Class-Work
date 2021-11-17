@@ -16,17 +16,17 @@ public class PersonController {
     
     private final PersonService personService;
 
-    @Autowired
+    @Autowired /* this is basically injecting the personservice class into this method so that it can use the data from that class */
     public PersonController(PersonService personService) {
         this.personService = personService;
     }
 
-    @PostMapping
+    @PostMapping /* posts a person to the data base via post man */
     public void addPerson(@RequestBody Person person) {
         personService.addPerson(person);
     }
 
-    @GetMapping
+    @GetMapping /* gets all data from data base which holds the people */
     public List<Person> getAllPeople() {
         return personService.getAllPeople();
     }

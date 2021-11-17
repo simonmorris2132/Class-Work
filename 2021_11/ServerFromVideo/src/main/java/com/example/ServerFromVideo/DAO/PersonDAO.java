@@ -9,7 +9,7 @@ public interface PersonDAO {
     
     int insertPerson(UUID id, Person person);
 
-    default int insertPerson(Person person) {
+    default int insertPerson(Person person) {/* this inserts a person with a random id and a name we give to the data base */
         UUID id = UUID.randomUUID();
         return insertPerson(id, person);
     }
