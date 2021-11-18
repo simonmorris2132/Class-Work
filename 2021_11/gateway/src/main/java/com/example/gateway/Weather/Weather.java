@@ -1,4 +1,4 @@
-package com.example.gateway;
+package com.example.gateway.Weather;
 
 public class Weather {
     
