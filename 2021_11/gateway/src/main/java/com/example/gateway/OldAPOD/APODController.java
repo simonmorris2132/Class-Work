@@ -1,25 +1,63 @@
 package com.example.gateway.OldAPOD;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.Environment;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
-@RestController
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class APODController {
-	
-	@Autowired
-	private Environment env;
     
-    @GetMapping("/apodinfo")
-	public APOD apodInfo(RestTemplate restTemplate) {
-		String URL = "https://api.nasa.gov/planetary/apod?api_key=" + env.getProperty("apikey.nasa");
+    private String date;
+    private String copyright;
+    private String title;
+    private String url;
+    private String hdurl;
+    private String explanation;
 
-		APOD apod = restTemplate.getForObject(URL, APOD.class);
-		
-		return apod;
+    public String getDate() {
+        return this.date;
+    }
 
-	}
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getCopyright() {
+        return copyright;
+    }
+
+    public void setCopyright(String copyright) {
+        this.copyright = copyright;
+    }
+
+    public String getTitle() {
+        return this.title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getUrl() {
+        return this.url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+    
+    public String getHdurl() {
+        return hdurl;
+    }
+
+    public void setHdurl(String hdurl) {
+        this.hdurl = hdurl;
+    }
+
+    public String getExplanation() {
+        return this.explanation;
+    }
+
+    public void setExplanation(String explanation) {
+        this.explanation = explanation;
+    }
 
 }
