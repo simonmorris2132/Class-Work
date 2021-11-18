@@ -23,7 +23,7 @@ public class GatewayApplication {
 
 	@GetMapping("/")
 	public String rootRoute() {
-		return "Welcome Home!"; /* This returns Welcome Home! on the home (root) page. GetMapping is requesting the root route at "/" */
+		return "Welcome Home! Type /apodinfo to access NASA's data!"; /* This returns Welcome Home! on the home (root) page. GetMapping is requesting the root route at "/" */
 	}
 
 	/* @GetMapping("/apod") 
