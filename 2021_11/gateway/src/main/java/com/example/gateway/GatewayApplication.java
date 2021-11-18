@@ -1,8 +1,5 @@
 package com.example.gateway;
 
-import com.example.gateway.Weather.Weather;
-import com.example.gateway.oldAPOD.APOD;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.client.RestTemplateBuilder;
@@ -29,8 +26,8 @@ public class GatewayApplication {
 		return "Welcome Home!"; /* This returns Welcome Home! on the home (root) page. GetMapping is requesting the root route at "/" */
 	}
 
-	// @GetMapping("/apod") /* This gets the /apod part of the site and sets it up. It grabs resttemplate so it can GET things and taps into the APOD class to format it accordingly with the title and the url in which a video will be there, and the explanation. */
-/* 	public APOD apodInfo(RestTemplate restTemplate) {
+	/* @GetMapping("/apod") 
+	public APOD apodInfo(RestTemplate restTemplate) {
 		String URL = "https://api.nasa.gov/planetary/apod?api_key=8ffWsaa5x0qOUcPoo0FWwekN1XoPWgjLJuQa9uGJ";
 
 		APOD apod = restTemplate.getForObject(URL, APOD.class);
@@ -39,8 +36,8 @@ public class GatewayApplication {
 
 	} */
 
-	// @GetMapping("/weather") /* Returns with weather route and displays all info from the free weather api */
-	/* public Weather weatherInfo(RestTemplate restTemplate) {
+	/* @GetMapping("/weather") 
+	public Weather weatherInfo(RestTemplate restTemplate) {
 		String URL1 = "http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=cfc27e811208976be0555ea9425aec24";
 
 		Weather weather = restTemplate.getForObject(URL1, Weather.class);

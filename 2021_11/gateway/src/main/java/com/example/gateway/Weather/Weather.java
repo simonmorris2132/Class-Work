@@ -1,42 +1,39 @@
 package com.example.gateway.Weather;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Weather {
     
-    private String cod;
-    private String message;
-    private String cnt;
-    private String list;
+    private Coordinate coord;
+    private Main main;
 
-    public String getCod() {
-        return this.cod;
+    class Coordinate {
+        public float lon;
+        public float lat;
     }
 
-    public void setCod(String cod) {
-        this.cod = cod;
+    class Main {
+        public float temp;
+        public float feels_like;
+
     }
 
-    public String getMessage() {
-        return this.message;
+    public Coordinate getCoord() {
+        return this.coord;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setCoord(Coordinate coord) {
+        this.coord = coord;
     }
 
-    public String getCnt() {
-        return this.cnt;
+    public Main getMain() {
+        return this.main;
     }
 
-    public void setCnt(String cnt) {
-        this.cnt = cnt;
+    public void setMain(Main main) {
+        this.main = main;
     }
 
-    public String getList() {
-        return this.list;
-    }
-
-    public void setList(String list) {
-        this.list = list;
-    }
 
 }
