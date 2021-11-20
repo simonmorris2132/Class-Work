@@ -1,10 +1,13 @@
 package com.example.ServerFromVideo.API;
 
 import java.util.List;
+import java.util.UUID;
+
 import com.example.ServerFromVideo.Model.Person;
 import com.example.ServerFromVideo.Service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,6 +32,11 @@ public class PersonController {
     @GetMapping /* gets all data from data base which holds the people */
     public List<Person> getAllPeople() {
         return personService.getAllPeople();
+    }
+
+    @GetMapping(path = "{id}") /* Searches for person by id rather than just getting every person */
+    public Person getPersonById(@PathVariable UUID id) {
+        return personService.getPersonById(id).orElse(null);
     }
 
 }

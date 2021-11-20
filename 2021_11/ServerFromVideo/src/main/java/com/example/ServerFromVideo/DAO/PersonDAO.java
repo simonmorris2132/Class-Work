@@ -1,6 +1,7 @@
 package com.example.ServerFromVideo.DAO;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 import com.example.ServerFromVideo.Model.Person;
@@ -15,5 +16,11 @@ public interface PersonDAO {
     }
 
     List<Person> selectAllPeople();
+
+    Optional<Person> selectPersonById(UUID id);
+
+    int deletePersonById(UUID id);
+
+    int updatePersonById(UUID id, Person person);
 
 }
