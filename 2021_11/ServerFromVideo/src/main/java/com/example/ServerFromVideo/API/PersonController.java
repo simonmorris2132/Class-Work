@@ -2,7 +2,6 @@ package com.example.ServerFromVideo.API;
 
 import java.util.List;
 import java.util.UUID;
-
 import com.example.ServerFromVideo.Model.Person;
 import com.example.ServerFromVideo.Service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
