@@ -27,7 +27,7 @@ public class PersonService {
         return personDAO.selectAllPeople();
     }
 
-    public Optional<Person> getPersonById(UUID id) {
+    public Optional<Person> getPersonById(UUID id) { /* This sets the parameters for searching a person by their id */
         return personDAO.selectPersonById(id);
     }
 
