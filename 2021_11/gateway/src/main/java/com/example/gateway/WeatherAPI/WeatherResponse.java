@@ -1,4 +1,4 @@
-package com.example.gateway.Weather;
+package com.example.gateway.WeatherAPI;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
@@ -7,7 +7,7 @@ public class WeatherResponse {
     
     private Coordinate coord;
     private Main main;
-    private Weather[] weather;
+    private WeatherTest weather;
 
     public class Coordinate {
         public float lon;
@@ -24,12 +24,12 @@ public class WeatherResponse {
 
     }
 
-    public class Weather {
+/*     public class Weather {
         public short id;
         public String main;
         public String description;
         public String icon;
-    }
+    } */
 
     public Coordinate getCoord() {
         return this.coord;
@@ -47,12 +47,20 @@ public class WeatherResponse {
         this.main = main;
     }
 
-    public Weather[] getWeather() {
+  /*   public WeatherTest getWeather() {
+        return this.weather;
+    }
+
+    public void setWeather(WeatherTest weather) {
+        this.weather = weather;
+    } */
+
+    /* public Weather[] getWeather() {
         return this.weather;
     }
 
     public void setWeather(Weather[] weather) {
         this.weather = weather;
-    }
+    } */
 
 }
