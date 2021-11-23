@@ -12,7 +12,7 @@ public class APODController {
     @Autowired
     private Environment environment;
 
-    @GetMapping("/apodinfo")
+    @GetMapping("/apod")
     public APOD apodInfo (RestTemplate restTemplate) {
         String URL = "https://api.nasa.gov/planetary/apod?api_key=" + environment.getProperty("NASA_API_KEY");
 
