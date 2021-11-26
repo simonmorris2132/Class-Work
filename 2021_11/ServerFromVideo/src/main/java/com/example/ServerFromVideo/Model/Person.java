@@ -1,11 +1,13 @@
 package com.example.ServerFromVideo.Model;
 
 import java.util.UUID;
+import javax.validation.constraints.NotBlank;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Person {
     
     private final UUID id;
+    @NotBlank
     private final String name;
     private final String cohort;
 
