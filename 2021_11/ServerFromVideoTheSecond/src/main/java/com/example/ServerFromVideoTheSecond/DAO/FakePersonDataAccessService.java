@@ -1,10 +1,10 @@
-package com.example.ServerFromVideo.DAO;
+package com.example.ServerFromVideoTheSecond.DAO;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
-import com.example.ServerFromVideo.Model.Person;
+import com.example.ServerFromVideoTheSecond.Model.*;
 import org.springframework.stereotype.Repository;
 
 @Repository("fakeDAO")

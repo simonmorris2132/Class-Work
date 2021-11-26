@@ -1,4 +1,4 @@
-package com.example.ServerFromVideo.Model;
+package com.example.ServerFromVideoTheSecond.Model;
 
 import java.util.UUID;
 import javax.validation.constraints.NotBlank;
