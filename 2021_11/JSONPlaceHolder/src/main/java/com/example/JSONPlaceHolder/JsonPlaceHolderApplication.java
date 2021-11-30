@@ -1,13 +1,13 @@
-package com.example.ServerFromVideoTheSecond;
+package com.example.JSONPlaceHolder;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ServerFromVideoTheSecondApplication {
+public class JsonPlaceHolderApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ServerFromVideoTheSecondApplication.class, args);
+		SpringApplication.run(JsonPlaceHolderApplication.class, args);
 	}
 
 }

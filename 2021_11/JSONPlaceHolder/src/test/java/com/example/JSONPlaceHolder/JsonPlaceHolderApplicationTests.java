@@ -1,10 +1,10 @@
-package com.example.ServerFromVideoTheSecond;
+package com.example.JSONPlaceHolder;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ServerFromVideoTheSecondApplicationTests {
+class JsonPlaceHolderApplicationTests {
 
 	@Test
 	void contextLoads() {

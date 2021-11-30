@@ -76,6 +76,7 @@
 			"ServerFromVideo",
 			"Virus\\Virus",
 			"ServerFromVideoTheSecond"
-		]
+		],
+		"maven.view": "hierarchical"
 	}
 }
