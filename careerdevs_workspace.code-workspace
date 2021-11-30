@@ -75,7 +75,8 @@
 			"edabit\\UpvoteDownvote",
 			"ServerFromVideo",
 			"Virus\\Virus",
-			"ServerFromVideoTheSecond"
+			"ServerFromVideoTheSecond",
+			"JSONPlaceHolder"
 		],
 		"maven.view": "hierarchical"
 	}

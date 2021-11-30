@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch JsonPlaceHolderApplication",
+            "request": "launch",
+            "mainClass": "com.example.JSONPlaceHolder.JsonPlaceHolderApplication",
+            "projectName": "JSONPlaceHolder"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
