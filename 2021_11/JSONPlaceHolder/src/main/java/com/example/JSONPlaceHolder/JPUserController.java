@@ -20,8 +20,6 @@ public JPUser[] jpUserInfo(RestTemplate restTemplate) {
 @GetMapping("/oneuser/{id}")
 public JPUser jpUserinfo2(RestTemplate restTemplate, @PathVariable short id) {
     String URL2 = "https://jsonplaceholder.typicode.com/users/" + id;
-    
-    System.out.println(URL2);
 
     JPUser jpUsers = restTemplate.getForObject(URL2, JPUser.class);
     
