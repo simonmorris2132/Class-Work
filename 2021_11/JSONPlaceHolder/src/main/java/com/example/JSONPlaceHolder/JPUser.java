@@ -36,6 +36,6 @@ public class JPUser {
 
     public void setEmail(String email) {
         this.email = email;
-    }
+    } 
 
 }
