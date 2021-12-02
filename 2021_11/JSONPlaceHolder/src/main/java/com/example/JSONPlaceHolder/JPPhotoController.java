@@ -17,14 +17,14 @@ public class JPPhotoController {
         return jpPhotos;
     }
 
-/*     @GetMapping("/photo/{id}")
-    public JPPhoto jpPhotoInfo2(RestTemplate restTemplate, @PathVariable short albumId) {
+/*     @GetMapping("/photo/{albumId}")
+    public JPPhoto jpPhotoInfo2(RestTemplate restTemplate, @PathVariable String albumId) {
         String URL2 = "https://jsonplaceholder.typicode.com/albums/" + albumId + "/photos";
 
         JPPhoto jpPhoto = restTemplate.getForObject(URL2, JPPhoto.class);
 
         return jpPhoto;
-    } */
-
+    }
+ */
 
 }
