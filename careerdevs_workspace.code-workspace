@@ -76,7 +76,8 @@
 			"ServerFromVideo",
 			"Virus\\Virus",
 			"ServerFromVideoTheSecond",
-			"JSONPlaceHolder"
+			"JSONPlaceHolder",
+			"GitHubAPI"
 		],
 		"maven.view": "hierarchical"
 	}
