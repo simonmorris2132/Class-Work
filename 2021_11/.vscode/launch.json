@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GitHubApiApplication",
+            "request": "launch",
+            "mainClass": "com.example.GitHubAPI.GitHubApiApplication",
+            "projectName": "GitHubAPI"
+        },
+        {
+            "type": "java",
             "name": "Launch JsonPlaceHolderApplication",
             "request": "launch",
             "mainClass": "com.example.JSONPlaceHolder.JsonPlaceHolderApplication",
