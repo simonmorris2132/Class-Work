@@ -1,13 +1,13 @@
-package com.example.NewServerFromVideo;
+package com.example.NewServerForTesting;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NewServerFromVideoApplication {
+public class NewServerForTestingApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NewServerFromVideoApplication.class, args);
+		SpringApplication.run(NewServerForTestingApplication.class, args);
 	}
 
 }

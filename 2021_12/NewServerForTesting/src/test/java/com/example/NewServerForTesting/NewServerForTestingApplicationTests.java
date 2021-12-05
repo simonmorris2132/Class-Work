@@ -1,10 +1,10 @@
-package com.example.NewServerFromVideo;
+package com.example.NewServerForTesting;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NewServerFromVideoApplicationTests {
+class NewServerForTestingApplicationTests {
 
 	@Test
 	void contextLoads() {
