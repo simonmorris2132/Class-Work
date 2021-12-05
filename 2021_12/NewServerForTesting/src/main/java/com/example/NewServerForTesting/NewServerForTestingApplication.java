@@ -1,7 +1,10 @@
 package com.example.NewServerForTesting;
 
+import java.time.LocalDate;
+import java.time.Month;
 import java.util.List;
 
+import com.example.NewServerForTesting.Student.Student;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,8 +19,8 @@ public class NewServerForTestingApplication {
 	}
 
 	@GetMapping("/")
-	public List<String> hello() {
-		return List.of("Hello", "World");
+	public List<Student> rootRoute() {
+		return List.of(new Student(1L, "Mariam", 30, LocalDate.of(2000, Month.FEBRUARY, 5), "mariam.jamal@gmail.com"));
 	}
 
 }
