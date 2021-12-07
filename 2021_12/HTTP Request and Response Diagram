@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-07T03:37:38.774Z" agent="5.0 (Macintosh)" etag="K-tb-sI6o8Q5q3CIy2L7" version="15.9.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-07T22:53:47.585Z" agent="5.0 (Macintosh)" etag="7v3hgsWprGBJ16LXqrDp" version="15.9.1" type="github">
   <diagram id="jQ0rYKSopFyJ-wFwuLw5" name="Page-1">
     <mxGraphModel dx="946" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -31,10 +31,10 @@
         <mxCell id="R5TX6DmFi4I59aMhgi4B-10" value="The endpoint of which the request will end." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="310" y="180" width="300" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="R5TX6DmFi4I59aMhgi4B-13" value="Where the data is then recieved" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-13" value="what kind of request is being made" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="310" y="220" width="270" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="R5TX6DmFi4I59aMhgi4B-14" value="Showing if server is alive" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-14" value="an optional set of commands to assign what response will be given." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="305" y="260" width="295" height="30" as="geometry" />
         </mxCell>
         <mxCell id="R5TX6DmFi4I59aMhgi4B-16" value="The contents of the data usually in JSON" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
