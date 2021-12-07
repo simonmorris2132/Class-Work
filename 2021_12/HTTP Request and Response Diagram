@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-07T00:42:04.331Z" agent="5.0 (Macintosh)" etag="xfDSOTej0d7QMq7XKt7v" version="15.9.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-07T02:49:23.638Z" agent="5.0 (Macintosh)" etag="tWuZSfcm2bl6IfEGVrGN" version="15.9.1" type="github">
   <diagram id="jQ0rYKSopFyJ-wFwuLw5" name="Page-1">
     <mxGraphModel dx="946" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -27,6 +27,18 @@
         </mxCell>
         <mxCell id="R5TX6DmFi4I59aMhgi4B-8" value="&lt;div&gt;the body&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="180" y="300" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-10" value="The endpoint of which the request will end." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="180" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-13" value="Where the data is then recieved" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="220" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-14" value="The status code of which there are multiple ranging from 200, 404, 500." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="305" y="260" width="295" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-16" value="The contents of the data usually in JSON" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="300" width="290" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
