@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" modified="2021-12-07T23:08:18.034Z" agent="5.0 (Macintosh)" etag="j2vevut0bjwXoZ7FNS9T" version="15.9.1" type="github">
+  <diagram id="jQ0rYKSopFyJ-wFwuLw5" name="Page-1">
+    <mxGraphModel dx="946" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-2" value="sources" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="35" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="160" width="520" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-4" value="&lt;div&gt;Request&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="120" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-5" value="&lt;div&gt;endpoint&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-6" value="the method" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="175" y="220" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-7" value="&lt;div&gt;the header&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-8" value="&lt;div&gt;the body&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="300" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-10" value="The endpoint of which the request will end." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="180" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-13" value="what kind of request is being made" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="220" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-14" value="an optional set of commands to assign what response will be given." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="305" y="260" width="295" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-16" value="Additional data to help fulfill the request" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="300" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-17" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;" vertex="1" parent="1">
+          <mxGeometry x="122.5" y="400" width="555" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-18" value="&lt;div&gt;Response&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="370" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-20" value="Header" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="175" y="440" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-21" value="Contains what kind of data is being shown ex: text.data" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="440" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-22" value="Body" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="175" y="540" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-23" value="Data itself usually in html or json" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="540" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-24" value="Status Code" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="175" y="630" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-25" value="the status of the response (404, 304, 200)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="630" width="280" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
