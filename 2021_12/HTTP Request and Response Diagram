@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-07T03:32:56.058Z" agent="5.0 (Macintosh)" etag="NHuWLLuny5x7XqYNKP_o" version="15.9.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-07T03:37:38.774Z" agent="5.0 (Macintosh)" etag="K-tb-sI6o8Q5q3CIy2L7" version="15.9.1" type="github">
   <diagram id="jQ0rYKSopFyJ-wFwuLw5" name="Page-1">
     <mxGraphModel dx="946" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -40,11 +40,23 @@
         <mxCell id="R5TX6DmFi4I59aMhgi4B-16" value="The contents of the data usually in JSON" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="310" y="300" width="290" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="R5TX6DmFi4I59aMhgi4B-17" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-17" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;" vertex="1" parent="1">
           <mxGeometry x="122.5" y="460" width="555" height="400" as="geometry" />
         </mxCell>
         <mxCell id="R5TX6DmFi4I59aMhgi4B-18" value="&lt;div&gt;Response&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="370" y="420" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-20" value="&lt;div&gt;Status Code&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="500" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-21" value="usually in codes of 200, 404, 302" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="500" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-22" value="Status Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="590" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R5TX6DmFi4I59aMhgi4B-23" value="lets you know what the status code means and what you did wrong if applicable." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="590" width="260" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
