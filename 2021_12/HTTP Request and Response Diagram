@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-07T22:59:02.212Z" agent="5.0 (Macintosh)" etag="Gc_aERqaPrhy-Dqjqtqn" version="15.9.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-07T22:59:54.280Z" agent="5.0 (Macintosh)" etag="pf75jDgb0213HWsD0kpl" version="15.9.1" type="github">
   <diagram id="jQ0rYKSopFyJ-wFwuLw5" name="Page-1">
     <mxGraphModel dx="946" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -11,7 +11,7 @@
           <mxGeometry x="100" y="35" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="R5TX6DmFi4I59aMhgi4B-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="140" y="140" width="520" height="260" as="geometry" />
+          <mxGeometry x="140" y="140" width="520" height="210" as="geometry" />
         </mxCell>
         <mxCell id="R5TX6DmFi4I59aMhgi4B-4" value="&lt;div&gt;Request&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="370" y="100" width="60" height="30" as="geometry" />
@@ -41,28 +41,28 @@
           <mxGeometry x="310" y="300" width="290" height="30" as="geometry" />
         </mxCell>
         <mxCell id="R5TX6DmFi4I59aMhgi4B-17" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;" vertex="1" parent="1">
-          <mxGeometry x="122.5" y="460" width="555" height="280" as="geometry" />
+          <mxGeometry x="122.5" y="400" width="555" height="280" as="geometry" />
         </mxCell>
         <mxCell id="R5TX6DmFi4I59aMhgi4B-18" value="&lt;div&gt;Response&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="370" y="420" width="60" height="30" as="geometry" />
+          <mxGeometry x="370" y="370" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="R5TX6DmFi4I59aMhgi4B-20" value="Header" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="175" y="500" width="70" height="30" as="geometry" />
+          <mxGeometry x="175" y="440" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="R5TX6DmFi4I59aMhgi4B-21" value="Contains what kind of data is being shown" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="390" y="500" width="200" height="30" as="geometry" />
+          <mxGeometry x="390" y="440" width="200" height="30" as="geometry" />
         </mxCell>
         <mxCell id="R5TX6DmFi4I59aMhgi4B-22" value="Body" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="175" y="590" width="70" height="30" as="geometry" />
+          <mxGeometry x="175" y="540" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="R5TX6DmFi4I59aMhgi4B-23" value="Data itself usually in html or json" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="350" y="590" width="260" height="30" as="geometry" />
+          <mxGeometry x="360" y="540" width="260" height="30" as="geometry" />
         </mxCell>
         <mxCell id="R5TX6DmFi4I59aMhgi4B-24" value="Status Code" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="175" y="670" width="70" height="30" as="geometry" />
+          <mxGeometry x="175" y="630" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="R5TX6DmFi4I59aMhgi4B-25" value="the status of the response (404, 304, 200)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="340" y="690" width="280" height="30" as="geometry" />
+          <mxGeometry x="350" y="630" width="280" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
