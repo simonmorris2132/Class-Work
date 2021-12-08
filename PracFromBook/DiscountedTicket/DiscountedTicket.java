@@ -1,4 +1,5 @@
 import java.util.Scanner;
+@SuppressWarnings("ALL")
 
 public class DiscountedTicket {
    public static void main(String[] args) {
