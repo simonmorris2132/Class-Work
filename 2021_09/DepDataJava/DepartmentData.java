@@ -536,6 +536,7 @@ static String[][]  employeeSalaries = {
         }
 
         //Challenge 2
+        String[] depos = {departments, employees, employeeDepartment, employeeSalaries};
         String ID = "";
         String salaries = "";
         String largestSalaries = "";
@@ -544,7 +545,7 @@ static String[][]  employeeSalaries = {
             for (int j = 0; j < employeeSalaries[i].length; j++) {
                 if (ID.indexOf(employeeSalaries[j][0]) == -1 + employeeSalaries[j][1].compareTo("60000")) {
                     ID = employeeSalaries[j][0];
-                    System.out.println(ID);
+                    //System.out.println(ID);
                 }
             }
         }
@@ -559,7 +560,16 @@ static String[][]  employeeSalaries = {
                 }
             }
         } */
+        /* for (int i = 0; i < employeeDepartment.length; i++) {
+            for (int j = 0; j < employeeDepartment[i].length; j++) {
+                if (employeeDepartment[j][3] != "9999-01-01") {
+                    System.out.println(employeeDepartment[j][3]);
+                }
+            }
+        } */
     }
+
 }
+    
     
 
