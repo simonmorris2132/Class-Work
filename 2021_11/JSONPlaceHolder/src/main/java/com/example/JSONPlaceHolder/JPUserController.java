@@ -51,17 +51,19 @@ public JPUser createUser(RestTemplate restTemplate, @RequestBody JPUser userData
     return newUserData;
 }
 
-/* @PutMapping("/update/{id}")//http://localhost:4000/api/users/update
-public ResponseEntity<JPUser> updateUser(RestTemplate restTemplate, @RequestBody JPUser userData, @PathVariable short id) {
+@PutMapping("/update/{id}")//http://localhost:4000/api/users/update
+public String updateUser(RestTemplate restTemplate, @RequestBody JPUser userData, @PathVariable short id) {
     String URL = "https://jsonplaceholder.typicode.com/users/" + id;
     
-    HttpEntity<JPUser> request = new HttpEntity(userData);
+    HttpHeaders headers = new HttpHeaders();
 
-    ResponseEntity<JPUser> newUserData = restTemplate.put(URL, request);
+    HttpEntity request = new HttpEntity(headers);
+
+    restTemplate.exchange(URL, HttpMethod.PUT, request, JPUser.class);
     //ResponseEntity<JPUser> newUserData = restTemplate.exchange(URL, HttpMethod.PUT, request, JPUser.class);
 
-    return newUserData;
-} */
+    return "Updated person with ID " + id;
+}
 
 @DeleteMapping("/delete/{id}")
 public String deleteUser(RestTemplate restTemplate, @PathVariable short id) {
