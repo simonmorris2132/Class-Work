@@ -18,6 +18,10 @@ public class SwitchStatements {
             case 2:
                 System.out.println("No");
                 break;
+            
+            case 3:
+                System.out.print("Why");
+                break;
 
             default:
                 break;
