@@ -5,10 +5,12 @@ public class SwitchStatements {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
-        int randomNumber = 0;
+        int randomNumber;
 
         System.out.println("Type out your question: ");
         scanner.nextLine();
+
+        randomNumber = random.nextInt(3);
 
         switch (randomNumber) {
             case 1:
@@ -26,5 +28,6 @@ public class SwitchStatements {
             default:
                 break;
         }
+        scanner.close();
     }
 }
