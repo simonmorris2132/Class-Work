@@ -35,7 +35,7 @@ public JPUser jpUserinfo2(RestTemplate restTemplate, @PathVariable short id) {
     return jpUsers;
 }
 
-@GetMapping("/printaddresses") //http://localhost:4004/api/users/printaddresses
+/* @GetMapping("/printaddresses") //http://localhost:4004/api/users/printaddresses
 public JPUser[] getAllAddresses(RestTemplate restTemplate) {
     String url = "https://jsonplaceholder.typicode.com/users";
     JPUser[] allUsers = restTemplate.getForObject(url, JPUser[].class);
@@ -45,7 +45,7 @@ public JPUser[] getAllAddresses(RestTemplate restTemplate) {
         System.out.println(tempUser.getName() + " lives in " + tempUser.getAddress().getCity());
     }
     return allUsers;
-}
+} */
 
 @PostMapping("/create")//http://localhost:4000/api/users/create
 public JPUser createUser(RestTemplate restTemplate, @RequestBody JPUser userData) {
