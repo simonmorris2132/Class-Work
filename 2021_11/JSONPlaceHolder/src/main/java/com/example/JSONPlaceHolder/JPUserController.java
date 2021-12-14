@@ -68,7 +68,6 @@ public String deleteUser(RestTemplate restTemplate, @PathVariable short id) {
 
     HttpEntity request = new HttpEntity(headers);
     
-
     restTemplate.exchange(URL, HttpMethod.DELETE, request, JPUser.class);
     return "deleted user with the id " + id;
 }
