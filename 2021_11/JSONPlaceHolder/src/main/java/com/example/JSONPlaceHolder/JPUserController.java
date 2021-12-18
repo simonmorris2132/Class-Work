@@ -35,6 +35,18 @@ public JPUser jpUserinfo2(RestTemplate restTemplate, @PathVariable short id) {
     return jpUsers;
 }
 
+/* @GetMapping("/printaddresses") //http://localhost:4004/api/users/printaddresses
+public JPUser[] getAllAddresses(RestTemplate restTemplate) {
+    String url = "https://jsonplaceholder.typicode.com/users";
+    JPUser[] allUsers = restTemplate.getForObject(url, JPUser[].class);
+    System.out.println("request all users");
+    for (int i = 0; i < allUsers.length; i++) {
+        JPUser tempUser = allUsers[i];
+        System.out.println(tempUser.getName() + " lives in " + tempUser.getAddress().getCity());
+    }
+    return allUsers;
+} */
+
 @PostMapping("/create")//http://localhost:4000/api/users/create
 public JPUser createUser(RestTemplate restTemplate, @RequestBody JPUser userData) {
     String URL = "https://jsonplaceholder.typicode.com/users";
@@ -68,7 +80,6 @@ public String deleteUser(RestTemplate restTemplate, @PathVariable short id) {
 
     HttpEntity request = new HttpEntity(headers);
     
-
     restTemplate.exchange(URL, HttpMethod.DELETE, request, JPUser.class);
     return "deleted user with the id " + id;
 }
