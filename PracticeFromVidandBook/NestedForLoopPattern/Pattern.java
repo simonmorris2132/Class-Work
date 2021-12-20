@@ -13,7 +13,7 @@ public class Pattern {
             System.out.println();
         }
 
-        for (int i = numOfStars; i > 0; i--) {
+        for (int i = numOfStars - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 System.out.print("*");
             }
