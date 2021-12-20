@@ -1,3 +1,5 @@
+import java.awt.event.KeyEvent;
+
 import javax.swing.*;
 
 public class ArrowKeyDetect {
@@ -26,6 +28,21 @@ public class ArrowKeyDetect {
         left.setText("Left: 0");
         right.setText("Right: 0");
 
+        frame.addKeyListener(new Keylistener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+
+            }
+            @Override
+            public void keyPressed(KeyEvent e) {
+                int keyCode = e.getKeyCode();
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+
+            }
+        });
 
     }
 
