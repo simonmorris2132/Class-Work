@@ -29,6 +29,12 @@ public class ArrowKeyDetect {
         right.setText("Right: 0");
 
         frame.addKeyListener(new Keylistener() {
+
+            int upCount = 0;
+            int downCount = 0;
+            int leftCount = 0;
+            int rightCount = 0;
+
             @Override
             public void keyTyped(KeyEvent e) {
 
@@ -36,6 +42,25 @@ public class ArrowKeyDetect {
             @Override
             public void keyPressed(KeyEvent e) {
                 int keyCode = e.getKeyCode();
+                switch (keyCode) {
+                    case KeyEvent.VK_UP:
+                        up.setText("Up: " + Integer.toString(upCount++));
+                        break;
+                    
+                    case KeyEvent.VK_DOWN:
+                        down.setText("Down: " + Integer.toString(downCount++));
+                        break;
+
+                    case KeyEvent.VK_LEFT:
+                        left.setText("Left: " + Integer.toString(leftCount++));
+                        break;
+
+                    case KeyEvent.VK_RIGHT:
+                        right.setText("Right: " + Integer.toString(rightCount++));
+
+                    default:
+                        break;
+                }
             }
 
             @Override
