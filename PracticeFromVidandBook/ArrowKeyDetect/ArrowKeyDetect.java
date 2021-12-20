@@ -28,6 +28,8 @@ public class ArrowKeyDetect {
         left.setText("Left: 0");
         right.setText("Right: 0");
 
+        frame.addKeyListener();
+
         frame.addKeyListener(new Keylistener() {
 
             int upCount = 0;
