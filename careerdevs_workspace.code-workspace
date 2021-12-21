@@ -76,14 +76,7 @@
 	"settings": {
 		"java.configuration.updateBuildConfiguration": "automatic",
 		"java.project.sourcePaths": [
-			"edabit",
-			"edabit\\OtherFolder",
-			"edabit\\UpvoteDownvote",
-			"ServerFromVideo",
-			"Virus\\Virus",
-			"ServerFromVideoTheSecond",
-			"JSONPlaceHolder",
-			"GitHubAPI"
+			"RollingDice"
 		],
 		"maven.view": "hierarchical"
 	}
