@@ -1,3 +1,5 @@
+package NestedForLoopPattern;
+
 import java.util.Scanner;
 
 public class Pattern {

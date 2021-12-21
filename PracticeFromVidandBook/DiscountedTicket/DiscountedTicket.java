@@ -1,3 +1,5 @@
+package DiscountedTicket;
+
 import java.util.Scanner;
 @SuppressWarnings("ALL")
 

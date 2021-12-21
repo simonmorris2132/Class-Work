@@ -1,5 +1,7 @@
-import java.awt.event.KeyEvent;
+package ArrowKeyDetect;
 
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import javax.swing.*;
 
 public class ArrowKeyDetect {
@@ -28,9 +30,9 @@ public class ArrowKeyDetect {
         left.setText("Left: 0");
         right.setText("Right: 0");
 
-        frame.addKeyListener();
+        
 
-        frame.addKeyListener(new Keylistener() {
+        frame.addKeyListener(new KeyListener() {
 
             int upCount = 0;
             int downCount = 0;

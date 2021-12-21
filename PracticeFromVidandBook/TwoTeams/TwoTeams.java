@@ -1,3 +1,5 @@
+package TwoTeams;
+
 import java.util.Scanner;
 
 @SuppressWarnings("ALL")
