@@ -76,7 +76,8 @@
 	"settings": {
 		"java.configuration.updateBuildConfiguration": "automatic",
 		"java.project.sourcePaths": [
-			"RollingDice"
+			"RollingDice",
+			"."
 		],
 		"maven.view": "hierarchical"
 	}
