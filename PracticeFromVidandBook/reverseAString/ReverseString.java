@@ -1,6 +1,6 @@
 package reverseAString;
 
-public class NestedPattern {
+public class ReverseString {
     
     public static void main(String[] args) {
        String r = reverse("Oranges are neat!!!");
