@@ -1,7 +1,6 @@
 package com.careerdevs.stockmarketapi.controllers;
 
 import com.careerdevs.stockmarketapi.models.StockAPIModel;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;

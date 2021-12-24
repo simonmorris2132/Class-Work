@@ -1,5 +1,8 @@
 package com.careerdevs.stockmarketapi.models;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class StockAPIModel {
     private String Symbol;
     private String AssetType;
