@@ -19,9 +19,9 @@ public class StockAPIController {
     public StockAPIModel stockApiInfo(RestTemplate restTemplate) {
         String url = "https://www.alphavantage.co/query?function=OVERVIEW&symbol=IBM&apikey=" + environment.getProperty("stock_api_key");
 
-        StockAPIModel model = restTemplate.getForObject(url, StockAPIModel.class);
+        StockAPIModel models = restTemplate.getForObject(url, StockAPIModel.class);
 
-        return model;
+        return models;
     }
 
 }
