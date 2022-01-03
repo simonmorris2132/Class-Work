@@ -3,5 +3,10 @@ void setup() {
 }
 
 void draw() {
-    line(0, 5, 8, 8);
+    if (mousePressed) {
+        fill(0);
+    } else {
+        fill(255);
+    }
+    ellipse(mouseX, mouseY, 80, 80);
 }
