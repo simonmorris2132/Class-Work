@@ -4,41 +4,41 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class StockAPIModel {
-    private String Symbol;
-    private String AssetType;
-    private String Name;
-    private String Description;
+    private String symbol;
+    private String assetType;
+    private String name;
+    private String description;
 
     public String getSymbol() {
-        return this.Symbol;
+        return this.symbol;
     }
 
-    public void setSymbol(String Symbol) {
-        this.Symbol = Symbol;
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
     }
 
     public String getAssetType() {
-        return this.AssetType;
+        return this.assetType;
     }
 
-    public void setAssetType(String AssetType) {
-        this.AssetType = AssetType;
+    public void setAssetType(String assetType) {
+        this.assetType = assetType;
     }
 
     public String getName() {
-        return this.Name;
+        return this.name;
     }
 
-    public void setName(String Name) {
-        this.Name = Name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {
-        return this.Description;
+        return this.description;
     }
 
-    public void setDescription(String Description) {
-        this.Description = Description;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
 }
