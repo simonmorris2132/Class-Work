@@ -13,8 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 public class PastebinController {
     
     @PostMapping("/create")
-    public PastebinapiModel postMethodName(RestTemplate restTemplate, @RequestBody PastebinapiModel entity) {
-        
+    public PastebinapiModel postMethodName(RestTemplate restTemplate, @RequestBody PastebinapiModel entity) { 
         String url = "https://pastebin.com/api/api_post.php";
 
         HttpEntity<PastebinapiModel> request = new HttpEntity(entity);
