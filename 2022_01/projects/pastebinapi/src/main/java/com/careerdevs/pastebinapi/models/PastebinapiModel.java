@@ -1,4 +1,4 @@
-package main.java.com.careerdevs.pastebinapi.models;
+package com.careerdevs.pastebinapi.models;
 
 public class PastebinapiModel {
     private String api_option;
