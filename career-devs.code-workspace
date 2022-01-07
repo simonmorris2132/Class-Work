@@ -6,6 +6,8 @@
 	],
 	"settings": {
 		"java.configuration.updateBuildConfiguration": "disabled",
-		"java.project.sourcePaths": []
+		"java.project.sourcePaths": [
+			"2022_01/projects/pattern"
+		]
 	}
 }

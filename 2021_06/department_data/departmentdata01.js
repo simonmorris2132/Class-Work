@@ -543,7 +543,7 @@ for (let i = 0; i < employees.length; i++) {
   for (let j = 0; j < employeeDepartment.length; j++) {
     for (let k = 0; k < departments.length; k++) {
       if (employeeID == employeeDepartment[j][0] && employeeDepartment[j][1] == departments[k][0]) {
-        console.log(employName , departments[k][1])
+        console.log(employName, departments[k][1])
       }
     }
   }
