@@ -1,5 +1,7 @@
+package lecturefromstanford.lecture1;
+
 public class LectureOne {
     public static void main(String[] args) {
-        Systemm.out.println("Hello");
+        System.out.println("Hello");
     }
 }
