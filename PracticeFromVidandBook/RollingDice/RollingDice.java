@@ -1,3 +1,5 @@
+package RollingDice;
+
 import java.util.Random;
 
 public class RollingDice {
