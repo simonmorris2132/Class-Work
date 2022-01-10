@@ -1,6 +1,6 @@
 package lecturetwo;
 
-public class LectureTwo {
+public class Pencil {
     public String color = "red";
     public int length;
     public float diameter;
