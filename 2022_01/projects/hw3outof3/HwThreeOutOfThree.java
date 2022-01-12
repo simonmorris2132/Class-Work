@@ -1,3 +1,5 @@
+package projects.hw3outof3;
+
 public class HwThreeOutOfThree {
     public static void main(String[] args) {
         System.out.println(generateName("Simon", "Morris"));

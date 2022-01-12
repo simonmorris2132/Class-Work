@@ -7,11 +7,7 @@
 	"settings": {
 		"java.configuration.updateBuildConfiguration": "disabled",
 		"java.project.sourcePaths": [
-			"PracticeFromVidandBook/lecturefromstanford/lecture1",
-			"2022_01/projects/pattern",
-			"PracticeFromVidandBook/lecturefromstanford/lecture2",
-			"PracticeFromVidandBook",
-			"MIT_Lectures"
+			"2022_01"
 		]
 	}
 }

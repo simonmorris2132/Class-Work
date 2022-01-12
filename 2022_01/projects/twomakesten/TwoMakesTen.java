@@ -1,3 +1,5 @@
+package projects.twomakesten;
+
 public class TwoMakesTen {
     public static boolean makesTen(int a, int b) {
         
