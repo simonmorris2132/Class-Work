@@ -45,6 +45,7 @@ public class Car {
         this.gasTankPercent = gasTankPercent;
     }
 
+    @Override
     public String toString() {
         return this.make + " " + this.model + " " + this.mileage + " " + this.gasTankPercent;
     }
