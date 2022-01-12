@@ -45,4 +45,8 @@ public class Car {
         this.gasTankPercent = gasTankPercent;
     }
 
+    public String toString() {
+        return this.make + " " + this.model + " " + this.mileage + " " + this.gasTankPercent;
+    }
+
 }
