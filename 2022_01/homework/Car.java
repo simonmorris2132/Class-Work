@@ -47,7 +47,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return this.make + " " + this.model + " " + this.mileage + " " + this.gasTankPercent;
+        return this.make + ", " + this.model + ", " + this.mileage + ", " + this.gasTankPercent;
     }
 
 }
