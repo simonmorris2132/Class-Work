@@ -1,12 +1,11 @@
 package lecturetwo;
 
 public class Pencil {
-    private String color;
-    private int length;
-    private float diameter;
-    private static long nextID = 0;
+   private String color;
+   private int length;
+   private int diameter;
 
-    public Pencil(String color, int length, float diameter) {
+    public Pencil(String color, int length, int diameter) {
         this.color = color;
         this.length = length;
         this.diameter = diameter;
@@ -28,12 +27,17 @@ public class Pencil {
         this.length = length;
     }
 
-    public float getDiameter() {
+    public int getDiameter() {
         return this.diameter;
     }
 
-    public void setDiameter(float diameter) {
+    public void setDiameter(int diameter) {
         this.diameter = diameter;
+    }
+
+    @Override
+    public String toString() {
+        return this.color + " " + this.length + " " + this.diameter;
     }
 
 }
