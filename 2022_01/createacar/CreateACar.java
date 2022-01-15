@@ -16,13 +16,10 @@ public class CreateACar {
         String model = scanner.nextLine();
         String owner = scanner.nextLine();
 
+        scanner.close();
 
         return Arrays.asList(make, model, owner);
-
-
-
     }
 
 
 }
-
