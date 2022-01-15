@@ -17,6 +17,8 @@ public class CreateACarTwo {
         int mileage = scanner.nextInt();
         float gasMilePercentage = scanner.nextFloat();
 
+        scanner.close();
+
         return Arrays.asList(make, model, mileage, gasMilePercentage);
 
     }
