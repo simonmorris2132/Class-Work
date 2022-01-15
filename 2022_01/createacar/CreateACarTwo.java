@@ -20,7 +20,6 @@ public class CreateACarTwo {
         scanner.close();
 
         return Arrays.asList(make, model, mileage, gasMilePercentage);
-
     }
 
 }
