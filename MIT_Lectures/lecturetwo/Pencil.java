@@ -12,4 +12,28 @@ public class Pencil {
         this.diameter = diameter;
     }
 
+    public String getColor() {
+        return this.color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getLength() {
+        return this.length;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public float getDiameter() {
+        return this.diameter;
+    }
+
+    public void setDiameter(float diameter) {
+        this.diameter = diameter;
+    }
+
 }
