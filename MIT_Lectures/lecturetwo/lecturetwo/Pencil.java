@@ -37,7 +37,7 @@ public class Pencil {
 
     @Override
     public String toString() {
-        return this.color + " " + this.length + " " + this.diameter;
+        return this.color + ", " + this.length + ", " + this.diameter;
     }
 
 }
