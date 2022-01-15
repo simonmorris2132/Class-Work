@@ -21,5 +21,4 @@ public class CreateACar {
         return Arrays.asList(make, model, owner);
     }
 
-
 }
