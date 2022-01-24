@@ -7,9 +7,7 @@
 	"settings": {
 		"java.configuration.updateBuildConfiguration": "disabled",
 		"java.project.sourcePaths": [
-			"MIT_Lectures/lecturetwo",
-			"2022_01",
-			"2021_09/DepDataJava"
+			"2022_01/factory"
 		]
 	}
 }
