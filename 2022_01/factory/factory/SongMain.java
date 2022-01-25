@@ -1,5 +1,5 @@
 package factory;
 
-public class Song {
+public class SongMain {
     
 }
