@@ -39,4 +39,13 @@ public class Car {
         this.isRented = isRented;
     }
 
+    @Override
+    public String toString() {
+        return "{" +
+            " make= '" + getMake() + "'" +
+            ", model= '" + getModel() + "'" +
+            ", isRented= '" + isIsRented() + "'" +
+            "}";
+    }
+
 }
