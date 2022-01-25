@@ -38,9 +38,9 @@ public class Country {
     @Override
     public String toString() {
         return "{" +
-            " name='" + getName() + "'" +
-            ", population='" + getPopulation() + "'" +
-            ", capital='" + getCapital() + "'" +
+            " name = '" + getName() + "'" +
+            ", population = '" + getPopulation() + "'" +
+            ", capital = '" + getCapital() + "'" +
             "}";
     }
 
