@@ -8,6 +8,7 @@ public class RentalServiceTwo {
         Car car2 = new Car("Hyundai", "Elantra");
         Car car3 = new Car("Honda", "Accord");
 
+        //ArrayList
         ArrayList<Car> availCars = new ArrayList<>();
         ArrayList<Car> rentedCars = new ArrayList<>();
 
