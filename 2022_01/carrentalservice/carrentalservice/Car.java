@@ -19,12 +19,13 @@ public class Car {
         return this.model;
     }
 
+
     public boolean isIsRented() {
         return this.isRented;
     }
 
-    public boolean setIsRented(boolean isRented) {
-        return this.isRented;
+    public void setIsRented(boolean isRented) {
+        this.isRented = isRented;
     }
 
     @Override
