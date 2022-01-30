@@ -4,7 +4,6 @@ public class Car {
     private String make;
     private String model;
     private boolean isRented;
-    private boolean isAvail;
 
     public Car(String make, String model) {
         this.make = make;
@@ -24,16 +23,8 @@ public class Car {
         return this.isRented;
     }
 
-    public boolean setIsRented() {
+    public boolean setIsRented(boolean isRented) {
         return this.isRented;
-    }
-
-    public boolean isIsAvail() {
-        return this.isAvail;
-    }
-
-    public boolean setIsAvail() {
-        return this.isAvail;
     }
 
     @Override
@@ -42,7 +33,6 @@ public class Car {
             " make = '" + getMake() + "'" +
             ", model = '" + getModel() + "'" +
             ", isRented = '" + isIsRented() + "'" +
-            ", isAvail = '" + isIsAvail() + "'" +
             "}";
     }
 
