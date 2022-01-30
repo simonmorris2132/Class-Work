@@ -21,6 +21,6 @@ public class RentalServiceTwo {
             System.out.println((i + 1) + ") " + availCars.get(i).getMake() + " " + availCars.get(i).getModel());
             //System.out.println((i + 1) + ") " + carStorage[i].getMake() + " " + carStorage[i].getModel());
         }
-        int userIn = UserInput.readInt("What is ur fav number");
+        
     }
 }
