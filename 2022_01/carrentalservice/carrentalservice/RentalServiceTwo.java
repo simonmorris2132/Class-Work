@@ -1,4 +1,4 @@
-package carrentalservice;
+package carrentalservice.carrentalservice;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package carrentalservice;
+package carrentalservice.carrentalservice;
 
 public class RentalService {
     public static void main(String[] args) {
