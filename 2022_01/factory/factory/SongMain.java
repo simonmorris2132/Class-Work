@@ -1,4 +1,4 @@
-package factory;
+package factory.factory;
 
 import java.util.Scanner;
 

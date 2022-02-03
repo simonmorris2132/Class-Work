@@ -10,8 +10,7 @@
 	"settings": {
 		"java.configuration.updateBuildConfiguration": "disabled",
 		"java.project.sourcePaths": [
-			"2022_01/factory",
-			"2022_01/carrentalservice"
+			"2022_01"
 		]
 	}
 }

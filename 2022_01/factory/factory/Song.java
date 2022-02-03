@@ -1,4 +1,4 @@
-package factory;
+package factory.factory;
 
 public class Song {
     private String title;
