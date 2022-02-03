@@ -1,3 +1,5 @@
+package projects.hw1outof3;
+
 public class HwOutOfThree {
     public static void main(String[] args) {
         System.out.println(run("Simon", "Morris", "Simon Morris"));

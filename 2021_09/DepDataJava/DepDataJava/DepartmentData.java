@@ -534,7 +534,7 @@ static String[][]  employeeSalaries = {
                 }
             }
         }
-
+/* 
         //Challenge 2
         String[] depos = {departments, employees, employeeDepartment, employeeSalaries};
         String ID = "";
@@ -550,7 +550,7 @@ static String[][]  employeeSalaries = {
             }
         }
         
-        
+         */
 
 /*         for (int i = 0; i < ID.length(); i++) {
             String largestSalary = "";
