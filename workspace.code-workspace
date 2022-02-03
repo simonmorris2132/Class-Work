@@ -2,15 +2,9 @@
 	"folders": [
 		{
 			"path": "."
-		},
-		{
-			"path": "..\\malware and virus stuff"
 		}
 	],
 	"settings": {
-		"java.configuration.updateBuildConfiguration": "disabled",
-		"java.project.sourcePaths": [
-			"2022_01"
-		]
+		"java.configuration.updateBuildConfiguration": "disabled"
 	}
 }
