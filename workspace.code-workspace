@@ -5,6 +5,16 @@
 		}
 	],
 	"settings": {
-		"java.configuration.updateBuildConfiguration": "disabled"
+		"java.configuration.updateBuildConfiguration": "disabled",
+		"java.project.sourcePaths": [
+			"2021_05",
+			"2022_01",
+			"2021_10",
+			"2021_07",
+			"2021_06",
+			"2021_09",
+			"2021_11",
+			"2021_12"
+		]
 	}
 }
