@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "..\\malware and virus stuff"
 		}
 	],
 	"settings": {
