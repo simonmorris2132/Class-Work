@@ -16,6 +16,25 @@ public class Main {
 
     private static void mainMenu() {
         System.out.println(UI.lineSpacer() + "\n   MAIN MENU\n" + UI.lineSpacer());
+        System.out.println("1) Repeat a String");
+        System.out.println("2) Exit the program");
+
+        int userSelect = UI.readInt("Select an option", 1, 2);
+        System.out.println("You selected " + userSelect);
+
+
+        switch (userSelect) {
+            case 1 -> repeatAString();
+
+            case 2 -> System.out.println("Thank you for using the program");
+
+        }
+
     }
+
+    private static void repeatAString() {
+
+    }
+
 
 }
