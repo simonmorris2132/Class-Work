@@ -6,7 +6,7 @@ public class Main {
        How many vowels
        two makes ten
        capture the rook
-       get word count    
+       get word count
     */
 
     public static void main(String[] args) {
