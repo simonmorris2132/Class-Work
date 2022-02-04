@@ -15,7 +15,7 @@ public class Main {
     }
 
     private static void mainMenu() {
-        System.out.println(UI.lineSpacer() + "\nMAIN MENU\n" + UI.lineSpacer());
+        System.out.println(UI.lineSpacer() + "\n   MAIN MENU\n" + UI.lineSpacer());
     }
 
 }
