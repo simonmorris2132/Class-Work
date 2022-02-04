@@ -34,6 +34,12 @@ public class Main {
 
     private static void repeatAString() {
 
+        String strToRepeat = UI.readString("Enter a string to repeat");
+
+        int numOfRepeats = UI.readInt("How many times do you wanna repeat the string?", 1, 10);
+
+        mainMenu();
+
     }
 
 
