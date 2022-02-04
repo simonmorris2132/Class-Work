@@ -36,4 +36,9 @@ public class UI {
         }
     }
     
+    public static String lineSpacer() {
+        return "-".repeat(15);
+    }
+
+
 }
