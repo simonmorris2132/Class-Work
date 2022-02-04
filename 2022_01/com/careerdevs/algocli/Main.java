@@ -40,6 +40,8 @@ public class Main {
 
         String repeatedString = strToRepeat.repeat(numOfRepeats);
 
+        System.out.println(repeatedString);
+
         mainMenu();
 
     }
