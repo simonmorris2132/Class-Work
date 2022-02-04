@@ -1,11 +1,6 @@
 package com.careerdevs.algocli;
 
 public class Main {
-<<<<<<< HEAD
-    public static void main(String[] args) {
-        
-    }
-=======
 
     /* Reverse a string
        How many vowels
@@ -47,6 +42,4 @@ public class Main {
 
     }
 
-
->>>>>>> b61d1b2dc9f4d86c7c438306ca2000e0d420b702
 }
