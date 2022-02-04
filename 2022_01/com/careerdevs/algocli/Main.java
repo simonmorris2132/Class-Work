@@ -38,6 +38,8 @@ public class Main {
 
         int numOfRepeats = UI.readInt("How many times do you wanna repeat the string?", 1, 10);
 
+        String repeatedString = strToRepeat.repeat(numOfRepeats);
+
         mainMenu();
 
     }
