@@ -70,7 +70,6 @@ public class Main {
     }
 
     private static void reverseAString() {
-
         String ques1 = "Enter a string to reverse";
 
         String strToReverse = UI.readString(ques1);
