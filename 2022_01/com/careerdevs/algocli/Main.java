@@ -17,7 +17,10 @@ public class Main {
     private static void mainMenu() {
         System.out.println(UI.lineSpacer() + "\n   MAIN MENU\n" + UI.lineSpacer());
         System.out.println("1) Repeat a String");
-        System.out.println("2) Exit the program");
+        System.out.println("2) How many vowels");
+        System.out.println("3) two makes ten");
+        System.out.println("4) reverse a string");
+        
 
         int userSelect = UI.readInt("Select an option", 1, 2);
         System.out.println("You selected " + userSelect);
@@ -43,6 +46,10 @@ public class Main {
         System.out.println(repeatedString);
 
         mainMenu();
+
+    }
+
+    private static void howManyVowels() {
 
     }
 
