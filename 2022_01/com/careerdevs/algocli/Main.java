@@ -71,8 +71,16 @@ public class Main {
 
     private static void reverseAString() {
 
-        
+        String ques1 = "Enter a string to reverse";
 
+        String strToReverse = UI.readString(ques1);
+
+        String reversedString = "";
+
+        for (int i = strToReverse.length - 1; i >= 0; i--) {
+            reversedString += strToReverse.charAt(i) + reversedString;
+        }
+        System.out.println(reversedString);
     }
 
     private static void getWordCount() {
