@@ -75,12 +75,11 @@ public class Main {
 
         String strToReverse = UI.readString(ques1);
 
-        String reversedString = "";
+        String reversedString = new StringBuilder(strToReverse).reverse().toString();
 
-        for (int i = strToReverse.length - 1; i >= 0; i--) {
-            reversedString += strToReverse.charAt(i) + reversedString;
-        }
         System.out.println(reversedString);
+
+        mainMenu();
     }
 
     private static void getWordCount() {
