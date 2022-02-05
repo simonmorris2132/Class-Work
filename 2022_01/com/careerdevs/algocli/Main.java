@@ -80,7 +80,17 @@ public class Main {
     }
 
     private static void twoMakesTen() {
+        String q1 = "Enter the first number";
+        String q2 = "Enter the second number";
 
+        int num1 = UI.readInt(q1, Integer.MIN_VALUE, Integer.MAX_VALUE);
+        int num2 = UI.readInt(q2, Integer.MIN_VALUE, Integer.MIN_VALUE);
+
+        if (num1 == 10 || num2 == 10 || num1 + num2 == 10) {
+            System.out.println("This is equal to or a sum of 10");
+        } else {
+            System.out.println("This ain't ten");
+        }
     }
 
     private static void reverseAString() {
