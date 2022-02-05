@@ -20,16 +20,28 @@ public class Main {
         System.out.println("2) How many vowels");
         System.out.println("3) two makes ten");
         System.out.println("4) reverse a string");
-        
+        System.out.println("5) get word count");
+        System.out.println("6) capture the rook");
+        System.out.println("7) Exit the program");
 
-        int userSelect = UI.readInt("Select an option", 1, 2);
+        int userSelect = UI.readInt("Select an option", 1, 7);
         System.out.println("You selected " + userSelect);
 
 
         switch (userSelect) {
             case 1 -> repeatAString();
 
-            case 2 -> System.out.println("Thank you for using the program");
+            case 2 -> howManyVowels();
+
+            case 3 -> twoMakesTen();
+
+            case 4 -> reverseAString();
+
+            case 5 -> getWordCount();
+
+            case 6 -> captureTheRook();
+
+            case 7 -> System.out.println("Thank you for using the program");
 
         }
 
@@ -51,6 +63,22 @@ public class Main {
 
     private static void howManyVowels() {
 
+    }
+
+    private static void twoMakesTen() {
+
+    }
+
+    private static void reverseAString() {
+
+    }
+
+    private static void getWordCount() {
+
+    }
+
+    private static void captureTheRook() {
+        
     }
 
 }
