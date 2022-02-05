@@ -62,7 +62,21 @@ public class Main {
     }
 
     private static void howManyVowels() {
+        String q = "Enter a string to count the vowels";
 
+        String vowelCheck = UI.readString(q);
+
+        int numOfVowels = 0;
+        for (int i = 0; i < vowelCheck.length(); i++) {
+            char tempChar = vowelCheck.charAt(i);
+
+            //a, e, i, o, u
+            if (tempChar == 'a' || tempChar == 'e' || tempChar == 'i' || tempChar == 'o' || tempChar == 'u') {
+                numOfVowels++;
+            }
+
+        }
+        System.out.println("There are " + numOfVowels + " in " + vowelCheck);
     }
 
     private static void twoMakesTen() {
