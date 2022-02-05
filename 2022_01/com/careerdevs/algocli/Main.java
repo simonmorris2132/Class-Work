@@ -109,11 +109,16 @@ public class Main {
     }
 
     private static void getWordCount() {
-
+        String q = "Enter a string to count the words in";
+        String userString = UI.readString(q);
+        String[] splStrings = userString.split(" ");
+        int numOfWords = splStrings.length;
+        System.out.println("\n"+userString + " contains " + numOfWords + " words");
+        mainMenu();
     }
 
     private static void captureTheRook() {
-
+        
     }
 
 }
