@@ -91,6 +91,9 @@ public class Main {
         } else {
             System.out.println("This ain't ten");
         }
+
+        mainMenu();
+
     }
 
     private static void reverseAString() {
