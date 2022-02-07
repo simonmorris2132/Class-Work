@@ -27,6 +27,9 @@ public class Menu {
     public void renting() {
         while (avaList.size() != 0) {
             inv.showAvailMenu();
+            
+            System.out.println("Choose what car you want to rent: ");
+            int selection = input.getInt(1, avaList.size());
         }
     }
 
