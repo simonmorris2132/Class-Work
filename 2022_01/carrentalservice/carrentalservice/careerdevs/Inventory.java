@@ -15,6 +15,26 @@ public class Inventory {
         available.add(car3);
     }
 
-    
+    public void showAvailMenu() {
+        System.out.println("\nThis is our current available cars to rent: ");
+        for (int i = 0; i < available.size(); i++) {
+            System.out.println(i + 1 + ") " + available.get(i).getMake() + " " + available.get(i).getModel());
+        }
+    }
+
+    public void showRentedMenu() {
+        System.out.println("\nThis is our selection of cars that have been rented: ");
+        for(int i = 0; i < rented.size(); i++) {
+            System.out.println(i + 1 + ") " + rented.get(i).getMake() + " " + rented.get(i).getModel());
+        }
+    }
+
+    public ArrayList<Car> getAvailables() {
+        return available;
+    }
+
+    public ArrayList<Car> getRented() {
+        return rented;
+    }
 
 }
