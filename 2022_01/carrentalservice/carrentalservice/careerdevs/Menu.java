@@ -23,4 +23,11 @@ public class Menu {
 
         
     }
+
+    public void renting() {
+        while (avaList.size() != 0) {
+            inv.showAvailMenu();
+        }
+    }
+
 }
