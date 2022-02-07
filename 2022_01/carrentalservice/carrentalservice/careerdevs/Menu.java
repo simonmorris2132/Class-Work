@@ -13,6 +13,14 @@ public class Menu {
     }
 
     public void run() {
+        System.out.println("\nWe have a total of" + avaList.size() + " cars available for rent and " + rentList.size() + " currently being rented.");
+        System.out.println("\nChoose from the following menu options:");
+        System.out.println("1) Rent a car");
+        System.out.println("2) Return a car");
+        System.out.println("3) Exit the program");
+
+        int usersInput = input.getInt(1, 3);
+
         
     }
 }
