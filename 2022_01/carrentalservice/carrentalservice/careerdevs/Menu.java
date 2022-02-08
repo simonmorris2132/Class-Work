@@ -30,7 +30,24 @@ public class Menu {
             
             System.out.println("Choose what car you want to rent: ");
             int selection = input.getInt(1, avaList.size());
+
+            for (int i = 0; i < avaList.size(); i++) {
+                if (selection - 1 == i) {
+                    rentedTotal(i);
+                    rentList.add(avaList.get(i));
+                    avaList.remove(i);
+                    subMenu();
+                }
+            }
         }
     }
+
+    public void rentedTotal(int i) {
+        System.out.println(i);
+        System.out.println("\nThank you for choosing the " + avaList.get(i).getMake() + avaList.get(i).getModel() + "! How many days do you wish to rent it?\n");
+        int select = input.getInt();
+        System.out.println("For " + select + " days.");
+    }
+
 
 }

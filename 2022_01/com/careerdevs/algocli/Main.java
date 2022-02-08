@@ -101,7 +101,9 @@ public class Main {
 
         String strToReverse = UI.readString(ques1);
 
-        String reversedString = new StringBuilder(strToReverse).reverse().toString();
+        //String reversedString = new StringBuilder(strToReverse).reverse().toString();
+
+        String reversedString[] = 
 
         System.out.println(reversedString);
 
