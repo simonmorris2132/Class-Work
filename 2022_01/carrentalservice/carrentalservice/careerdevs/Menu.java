@@ -64,7 +64,7 @@ public class Menu {
 
             for (int i = 0; i < rentList.size(); i++) {
                 if (rentSelection - 1 == i) {
-                    System.out.println("\nThank you for returning the " + rentList.get(i) + "! We hope to see you again!");
+                    System.out.println("\nThank you for returning the " + rentList.get(i).getMake() + " " + rentList.get(i).getModel() + "! We hope to see you again!");
                     avaList.add(rentList.get(i));
                     rentList.remove(i);
                     subMenu();
@@ -75,7 +75,7 @@ public class Menu {
 
     public void rentedTotal(int i) {
         System.out.println(i);
-        System.out.println("\nThank you for choosing the " + avaList.get(i).getMake() + avaList.get(i).getModel() + "! How many days do you wish to rent it?\n");
+        System.out.println("\nThank you for choosing the " + avaList.get(i).getMake() + " " + avaList.get(i).getModel() + "! How many days do you wish to rent it?\n");
         int select = input.getInt();
         System.out.println("For " + select + " days.");
     }
