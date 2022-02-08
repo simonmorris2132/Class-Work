@@ -21,6 +21,14 @@ public class Menu {
 
         int usersInput = input.getInt(1, 3);
 
+        if (usersInput == 1) {
+            renting();
+        } else if (usersInput == 2) {
+            returnCar();
+        } else {
+            new UserInput().exit();
+        }
+
         
     }
 
