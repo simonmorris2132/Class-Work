@@ -10,9 +10,6 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class APODController {
     
-    @Autowired
-    private Environment environment;
-    
     @GetMapping("/apodinfo")
     public APODModel apodInfo(RestTemplate restTemplate) {
         String url = "https://api.nasa.gov/planetary/apod?ePb9IGWTjoa4WQlJUFbmXgrGUlId9ejemjEhYeCR";
