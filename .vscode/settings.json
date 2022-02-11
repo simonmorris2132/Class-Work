@@ -1,4 +1,6 @@
 {
     "java.configuration.updateBuildConfiguration": "disabled",
-    "java.project.sourcePaths": []
+    "java.project.sourcePaths": [
+        "2022_02/javabasics/introtorecursion"
+    ]
 }
