@@ -1,6 +1,4 @@
 {
     "java.configuration.updateBuildConfiguration": "disabled",
-    "java.project.sourcePaths": [
-        "2022_02/apis"
-    ]
+    "java.project.sourcePaths": []
 }
