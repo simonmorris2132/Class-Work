@@ -1,10 +1,10 @@
-package com.careerdevs.twitterapivone;
+package com.careerdevs.twitter;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TwitterapivoneApplicationTests {
+class TwitterApplicationTests {
 
 	@Test
 	void contextLoads() {
