@@ -33,7 +33,7 @@ public class Menu {
     }
 
     public void renting() {
-        while (avaList.size() != 0) {
+        while (!avaList.isEmpty()) {
             inv.showAvailMenu();
             
             System.out.println("Choose what car you want to rent: ");
