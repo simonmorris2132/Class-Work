@@ -10,6 +10,8 @@ public class TwitterapiController {
     public TwitterapiModel twitterInfo(RestTemplate restTemplate) {
         String url = "https://api.twitter.com/2/users/by/username/yeat1_-HAuthorization:BearerAAAAAAAAAAAAAAAAAAAAAA5wZAEAAAAA7MhNVTOspQzQcFJzlHm97PeZWvY%3DRNQ3uIkkW2n3Rwf464oJFoMVbv3aCCeqKG";
 
-        return null;
+        TwitterapiModel modelInfo = restTemplate.getForObject(url, TwitterapiModel.class);
+
+        return modelInfo;
     }
 }
