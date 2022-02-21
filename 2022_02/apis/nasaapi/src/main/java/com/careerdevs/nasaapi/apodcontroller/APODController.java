@@ -16,7 +16,7 @@ public class APODController {
 
     @GetMapping("/apodinfo")
     public APODModel apodInfo(RestTemplate restTemplate) {
-        String url = "https://api.nasa.gov/planetary/apod?" + environment.getProperty("MYAPIKEY");
+        String url = "https://api.nasa.gov/planetary/apod?api_key=" + environment.getProperty("MYAPIKEY");
 
         APODModel apod = restTemplate.getForObject(url, APODModel.class);
 
