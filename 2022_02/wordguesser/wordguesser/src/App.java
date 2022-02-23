@@ -59,7 +59,8 @@ public class App {
         }
 
         System.out.println("Game over!");
-
+        
+        scanner.close();
     }
 
     public static void print(char array[]) {
