@@ -26,7 +26,7 @@ public class App {
             while (!wordIsGuessed && tries != amountOfGuesses) {
                 System.out.println("Current Guesses: ");
                 System.out.print(playerGuess);
-                System.out.printf("You have %d tries left.\n", amountOfGuesses-tries);
+                System.out.printf(" You have %d tries left.\n", amountOfGuesses-tries);
                 System.out.println("Enter a single character: ");
                 char input = scanner.nextLine().charAt(0);
                 tries++;
