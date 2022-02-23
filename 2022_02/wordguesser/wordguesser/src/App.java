@@ -30,10 +30,53 @@ public class App {
                 System.out.println("Enter a single character: ");
                 char input = scanner.nextLine().charAt(0);
                 tries++;
+
+                if (input == '-') {
+                    wordIsGuessed = true;
+                    weArePlaying = false;
+                } else {
+                    for (int i = 0; i < randomWordToGuess.length; i++) {
+                        if (randomWordToGuess[i] == input) {
+                            playerGuess[i] = input;
+                        }
+                    }
+                    if (isTheWordGuessed(playerGuess)) {
+                        wordIsGuessed = true;
+                        System.out.println("Congrats!");
+                    }
+                }
+            }
+            if (!wordIsGuessed) {
+                System.out.println("You have ran out of guesses.");
+            }
+
+            System.out.println("Would you like to play again? Yes/No");
+            String choice = scanner.nextLine();
+            if (choice.equals("No")) {
+                weArePlaying = false;
             }
 
         }
 
+        System.out.println("Game over!");
 
     }
+
+    public static void print(char array[]) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static boolean isTheWordGuessed(char array[]) {
+        boolean condition = true;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == '_') {
+                condition = false;
+            }
+        }
+        return condition;
+    }
+
 }
