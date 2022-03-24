@@ -1,4 +1,4 @@
-package main.java.com.careerdevs.gorestapi.models;
+package com.careerdevs.gorestapi.models;
 
 public class GorestModel {
     
