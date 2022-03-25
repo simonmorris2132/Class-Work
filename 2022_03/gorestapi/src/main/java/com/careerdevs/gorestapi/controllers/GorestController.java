@@ -1,6 +1,7 @@
 package com.careerdevs.gorestapi.controllers;
 
 import com.careerdevs.gorestapi.models.GorestModel;
+import com.careerdevs.gorestapi.models.GorestModelArray;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -31,9 +32,18 @@ public class GorestController {
         try {
             String url = "https://gorest.co.in/public/v2/users/";
 
-            ResponseEntity<Object> firstPage = restTemplate.getForEntity(url, Object.class);
+            ResponseEntity<GorestModel[]> firstPage = restTemplate.getForEntity(url, GorestModel[].class);
 
+            GorestModel[] firstPageUsers = firstPage.getBody();
+
+            for (int i = 0; i < firstPageUsers.length; i++) {
+                GorestModel tempUser = firstPageUsers[i];
+
+                System.out.println(tempUser.generateReport());
+            }
+            
             return firstPage;
+
         } catch (Exception e) {
             System.out.println(e.getClass());
             System.out.println(e.getMessage());
@@ -41,20 +51,4 @@ public class GorestController {
         }
 
     }
-
-    @GetMapping("/{id}")
-    public Object getOneUser(
-        @PathVariable("id") String userId,
-        RestTemplate restTemplate
-    ) {
-        try {
-            String url = "https://gorest.co.in/public/v2/users/" + userId;
-            String apiToken = env.getProperty("GO_REST_TOKEN");
-        } catch (Exception e) {
-            //TODO: handle exception
-        }
-    }
-
-
-
 }
