@@ -51,4 +51,16 @@ public class CommentModel {
         this.body = body;
     }
 
+    @Override
+    public String toString() {
+        return "{" +
+            " id = '" + getId() + "'" +
+            ", postId = '" + getPostId() + "'" +
+            ", name = '" + getName() + "'" +
+            ", email = '" + getEmail() + "'" +
+            ", body = '" + getBody() + "'" +
+            "}";
+    }
+
+
 }
