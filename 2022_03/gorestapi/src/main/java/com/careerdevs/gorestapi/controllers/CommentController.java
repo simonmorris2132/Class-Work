@@ -94,7 +94,7 @@ public class CommentController {
 
             HttpEntity<CommentModel> request = new HttpEntity<CommentModel>(updateComment);
 
-            ResponseEntity<CommentModel> response = restTemplate.exchange(url, HttpMethod.PUT, request, CommentModel.class)
+            ResponseEntity<CommentModel> response = restTemplate.exchange(url, HttpMethod.PUT, request, CommentModel.class);
             return new ResponseEntity<>(response.getBody(), HttpStatus.OK);
 
         } catch (Exception e) {
