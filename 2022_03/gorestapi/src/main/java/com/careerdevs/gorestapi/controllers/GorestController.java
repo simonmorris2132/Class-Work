@@ -3,11 +3,16 @@ package com.careerdevs.gorestapi.controllers;
 import com.careerdevs.gorestapi.models.GorestModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -87,6 +92,44 @@ public class GorestController {
 
     }
     
+    @PostMapping
+    public ResponseEntity<Object> postComment(RestTemplate restTemplate, @RequestBody GorestModel newUser) {
+        try {
+            String url = "https://gorest.co.in/public/v2/comments";
+            String token = env.getProperty("GO_REST_TOKEN");
+            url += "?access-token=" + token;
+
+            HttpEntity<GorestModel> request = new HttpEntity<GorestModel>(newUser);
+
+            GorestModel newUsers = restTemplate.postForObject(url, request, GorestModel.class);
+
+            return new ResponseEntity<>(newUsers, HttpStatus.CREATED);
+
+        } catch (Exception e) {
+            System.out.println(e.getClass());
+            System.out.println(e.getMessage());
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @PutMapping
+    public ResponseEntity<Object> putComment(RestTemplate restTemplate, @RequestBody GorestModel updateUser) {
+        try {
+            String url = "https://gorest.co.in/public/v2/comments/" + updateUser.getId();
+            String token = env.getProperty("GO_REST_TOKEN");
+            url += "?access-token=" + token;
+
+            HttpEntity<GorestModel> request = new HttpEntity<GorestModel>(updateUser);
+
+            ResponseEntity<GorestModel> response = restTemplate.exchange(url, HttpMethod.PUT, request, GorestModel.class);
+            return new ResponseEntity<>(response.getBody(), HttpStatus.OK);
+
+        } catch (Exception e) {
+            System.out.println(e.getClass());
+            System.out.println(e.getMessage());
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 
 
 }
