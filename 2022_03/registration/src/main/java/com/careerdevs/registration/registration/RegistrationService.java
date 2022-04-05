@@ -2,9 +2,7 @@ package com.careerdevs.registration.registration;
 
 import com.careerdevs.registration.appuser.AppUser;
 import com.careerdevs.registration.appuser.AppUserService;
-
 import org.springframework.stereotype.Service;
-
 import lombok.AllArgsConstructor;
 
 @Service
