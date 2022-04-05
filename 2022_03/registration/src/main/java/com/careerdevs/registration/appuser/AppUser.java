@@ -31,7 +31,8 @@ public class AppUser implements UserDetails {
     @SequenceGenerator(name = "user_sequence", sequenceName = "user_sequence", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_sequence")
     private Long id;
-    private String name;
+    private String firstName;
+    private String lastName;
     private String username;
     private String email;
     private String password;
@@ -40,9 +41,9 @@ public class AppUser implements UserDetails {
     private boolean locked;
     private boolean enabled;
 
-
-    public AppUser(String name, String username, String email, String password, AppUserRole appUserRole, boolean locked, boolean enabled) {
-        this.name = name;
+    public AppUser(String firstName, String lastName, String username, String email, String password, AppUserRole appUserRole, boolean locked, boolean enabled) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.username = username;
         this.email = email;
         this.password = password;
@@ -52,12 +53,12 @@ public class AppUser implements UserDetails {
     }
 
 
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         SimpleGrantedAuthority authority = new SimpleGrantedAuthority(appUserRole.name());
         return Collections.singletonList(authority);
     }
+
 
     @Override
     public String getPassword() {
@@ -65,11 +66,13 @@ public class AppUser implements UserDetails {
         return password;
     }
 
+
     @Override
     public String getUsername() {
         // TODO Auto-generated method stub
         return username;
     }
+
 
     @Override
     public boolean isAccountNonExpired() {
@@ -77,11 +80,13 @@ public class AppUser implements UserDetails {
         return true;
     }
 
+
     @Override
     public boolean isAccountNonLocked() {
         // TODO Auto-generated method stub
         return !locked;
     }
+
 
     @Override
     public boolean isCredentialsNonExpired() {
@@ -89,10 +94,24 @@ public class AppUser implements UserDetails {
         return true;
     }
 
+
     @Override
     public boolean isEnabled() {
         // TODO Auto-generated method stub
-        return enabled;
+        return true;
     }
-    
+
+
+    public void setPassword(String encodedPassword) {
+        this.password = password;
+    }
+
+
+    public String getEmail() {
+        return email;
+    }
+
+
+
+
 }
