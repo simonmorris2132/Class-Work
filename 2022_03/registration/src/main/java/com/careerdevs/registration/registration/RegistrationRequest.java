@@ -15,6 +15,7 @@ public class RegistrationRequest {
     private String email;
     private String username;
     private String password;
+    private String appUserRole;
 
     public String getFirstName() {
         return this.firstName;
@@ -34,6 +35,10 @@ public class RegistrationRequest {
 
     public String getPassword() {
         return this.password;
+    }
+
+    public String getAppUserRole() {
+        return this.appUserRole;
     }
 
 }
