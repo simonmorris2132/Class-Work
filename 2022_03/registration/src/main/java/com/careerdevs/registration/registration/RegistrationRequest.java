@@ -16,6 +16,8 @@ public class RegistrationRequest {
     private String username;
     private String password;
     private String appUserRole;
+    private String isAccountNonLocked;
+    private String isEnabled;
 
     public String getFirstName() {
         return this.firstName;
@@ -39,6 +41,14 @@ public class RegistrationRequest {
 
     public String getAppUserRole() {
         return this.appUserRole;
+    }
+
+    public String getIsAccountNonLocked() {
+        return this.isAccountNonLocked;
+    }
+
+    public String getIsEnabled() {
+        return this.isEnabled;
     }
 
 }
