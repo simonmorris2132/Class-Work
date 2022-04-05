@@ -13,6 +13,7 @@ public class RegistrationRequest {
     private String firstName;
     private String lastName;
     private String email;
+    private String username;
     private String password;
 
     public String getFirstName() {
@@ -25,6 +26,10 @@ public class RegistrationRequest {
 
     public String getEmail() {
         return this.email;
+    }
+
+    public String getUsername() {
+        return this.username;
     }
 
     public String getPassword() {
