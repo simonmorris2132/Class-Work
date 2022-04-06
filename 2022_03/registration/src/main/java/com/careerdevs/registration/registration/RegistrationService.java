@@ -1,6 +1,7 @@
 package com.careerdevs.registration.registration;
 
 import com.careerdevs.registration.appuser.AppUser;
+import com.careerdevs.registration.appuser.AppUserRole;
 import com.careerdevs.registration.appuser.AppUserService;
 import org.springframework.stereotype.Service;
 import lombok.AllArgsConstructor;
@@ -19,7 +20,7 @@ public class RegistrationService {
         if (!isValidEmail) {
             throw new IllegalStateException("Email not valid");
         }
-        return appUserService.signUpUser(new AppUser(request.getFirstName(), request.getLastName(), request.getUsername(), request.getEmail(), request.getPassword(), request.getAppUserRole());
+        return appUserService.signUpUser(new AppUser(request.getFirstName(), request.getLastName(), request.getUsername(), request.getEmail(), request.getPassword(), AppUserRole.USER, isValidEmail, isValidEmail));
     }
     
 }
