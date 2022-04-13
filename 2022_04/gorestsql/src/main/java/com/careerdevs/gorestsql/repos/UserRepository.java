@@ -1,5 +1,8 @@
 package com.careerdevs.gorestsql.repos;
 
-public interface UserRepository {
+import com.careerdevs.gorestsql.models.User;
+import org.springframework.data.repository.CrudRepository;
+
+public interface UserRepository extends CrudRepository<User, Integer> {
     
 }
