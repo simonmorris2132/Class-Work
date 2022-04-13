@@ -1,45 +1,53 @@
 package com.careerdevs.gorestsql.models;
 
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-@Entity
 public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-
+    private int id;
     private String name;
-
     private String email;
+    private String gender;
+    private String status;
 
-    public Integer getId() {
-        return this.id;
-    }
-
-    public void setId(Integer id) {
+    public User(int id, String name, String email, String gender, String status) {
         this.id = id;
+        this.name = name;
+        this.email = email;
+        this.gender = gender;
+        this.status = status;
+    }
+ 
+    public int getId() {
+        return this.id;
     }
 
     public String getName() {
         return this.name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getEmail() {
         return this.email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public String getGender() {
+        return this.gender;
     }
 
+    public String getStatus() {
+        return this.status;
+    }
+
+    public String generateReport() {
+        return name + " is currently " + status + ". You can contact them at: " + email;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+            " id = '" + getId() + "'" +
+            ", name = '" + getName() + "'" +
+            ", email = '" + getEmail() + "'" +
+            ", gender = '" + getGender() + "'" +
+            ", status = '" + getStatus() + "'" +
+            "}";
+    }
 
 }
-
