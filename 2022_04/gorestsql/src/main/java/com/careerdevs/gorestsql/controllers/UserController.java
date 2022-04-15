@@ -1,6 +1,8 @@
 package com.careerdevs.gorestsql.controllers;
 
 import com.careerdevs.gorestsql.models.User;
+import com.careerdevs.gorestsql.repos.UserRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpEntity;
@@ -14,6 +16,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -23,6 +27,9 @@ public class UserController {
     
     @Autowired
     Environment env;
+
+    @Autowired
+    private UserRepository userRepository;
 
     @GetMapping("/token")
     public String getToken() {
@@ -91,25 +98,15 @@ public class UserController {
 
     }
     
-    @PostMapping
-    public ResponseEntity<Object> postComment(RestTemplate restTemplate, @RequestBody User newUser) {
-        try {
-            String url = "https://gorest.co.in/public/v2/comments";
-            String token = env.getProperty("GO_REST_TOKEN");
-            url += "?access-token=" + token;
-
-            HttpEntity<User> request = new HttpEntity<User>(newUser);
-
-            User newUsers = restTemplate.postForObject(url, request, User.class);
-
-            return new ResponseEntity<>(newUsers, HttpStatus.CREATED);
-
-        } catch (Exception e) {
-            System.out.println(e.getClass());
-            System.out.println(e.getMessage());
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
-        }
+    @PostMapping("/add")
+    public @ResponseBody String addNewUser(@RequestParam String name, @RequestParam String email) {
+        User n = new User();
+        n.setName(name);
+        n.setEmail(email);
+        userRepository.save(n);
+        return "Saved";
     }
+
 
     @PutMapping
     public ResponseEntity<Object> putComment(RestTemplate restTemplate, @RequestBody User updateUser) {

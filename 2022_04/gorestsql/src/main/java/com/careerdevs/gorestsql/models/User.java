@@ -7,7 +7,7 @@ public class User {
     private String gender;
     private String status;
 
-    public User(int id, String name, String email, String gender, String status) {
+    public User() {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -48,6 +48,12 @@ public class User {
             ", gender = '" + getGender() + "'" +
             ", status = '" + getStatus() + "'" +
             "}";
+    }
+
+    public void setName(String name2) {
+    }
+
+    public void setEmail(String email2) {
     }
 
 }
