@@ -107,7 +107,6 @@ public class UserController {
         return "Saved";
     }
 
-
     @PutMapping
     public ResponseEntity<Object> putComment(RestTemplate restTemplate, @RequestBody User updateUser) {
         try {

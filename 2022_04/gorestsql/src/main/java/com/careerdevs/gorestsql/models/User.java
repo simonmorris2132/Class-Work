@@ -23,8 +23,16 @@ public class User {
         return this.name;
     }
 
+    public String setName(String name) {
+        return name;
+    }
+
     public String getEmail() {
         return this.email;
+    }
+
+    public String setEmail(String email) {
+        return email;
     }
 
     public String getGender() {
@@ -50,10 +58,7 @@ public class User {
             "}";
     }
 
-    public void setName(String name2) {
-    }
+    
 
-    public void setEmail(String email2) {
-    }
-
+ 
 }
