@@ -2,7 +2,6 @@ package com.careerdevs.gorestsql.controllers;
 
 import com.careerdevs.gorestsql.models.User;
 import com.careerdevs.gorestsql.repos.UserRepository;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpEntity;
