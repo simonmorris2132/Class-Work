@@ -5,3 +5,4 @@ root.geometry('800x600')
 root.title("Minesweeper")
 root.resizable()
 root.mainloop()
+
