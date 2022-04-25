@@ -13,5 +13,5 @@ class Cell:
         btn.bind('<Button-1>', self.left_click_actions)
         self.cell_btn_object = btn
         
-    def left_click_actions(self):
+    def left_click_actions(self, event):
         print("I am left-clicked!")
