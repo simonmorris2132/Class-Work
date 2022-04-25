@@ -1,4 +1,4 @@
-from tkinter import Button
+from tkinter import *
 
 class Cell:
     def __init__(self, is_mine=False):
