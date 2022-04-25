@@ -1,7 +1,8 @@
 from tkinter import *
+import settings
 
 root = Tk()
-root.geometry('1280x600')
+root.geometry(f'{settings.WIDTH}x{settings.HEIGHT}')
 root.title("Minesweeper")
 root.resizable(False, False)
 
