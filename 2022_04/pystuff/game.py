@@ -1,6 +1,7 @@
 from tkinter import *
 import settings
 import utils
+from cell import Cell
 
 root = Tk()
 root.geometry(f'{settings.WIDTH}x{settings.HEIGHT}')
@@ -35,12 +36,6 @@ center_frame = Frame(
 
 center_frame.place(x=utils.width_prct(25), y=utils.height_prct(25))
 
-btn1 = Button(
-    center_frame,
-    bg='blue',
-    text='First Button'
-)
-
-btn1.place(x=0, y=0)
+c1 = Cell()
 
 root.mainloop()
