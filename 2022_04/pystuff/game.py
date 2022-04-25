@@ -5,6 +5,7 @@ import utils
 from cell import Cell
 
 root = Tk()
+root.configure(bg='black')
 root.geometry(f'{settings.WIDTH}x{settings.HEIGHT}')
 root.title("Minesweeper")
 root.resizable(False, False)
