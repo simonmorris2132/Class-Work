@@ -10,4 +10,5 @@ class Cell:
             location,
             text='Text'
         )
+        btn.bind('<Button-1>')
         self.cell_btn_object = btn
