@@ -47,6 +47,4 @@ for x in range(settings.GRID_SIZE):
         
 Cell.randomize_mines()
 
-print("Hello")
-
 root.mainloop()
