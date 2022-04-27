@@ -19,7 +19,6 @@ class Cell:
             location,
             width=12, 
             height=4,
-            text=f"{self.x}.{self.y}"
         )
         
         self.cell_btn_object = btn
