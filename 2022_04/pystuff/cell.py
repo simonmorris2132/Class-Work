@@ -26,9 +26,18 @@ class Cell:
         btn.bind('<Button-3>', self.right_click_actions) #right click
         
     def left_click_actions(self, event):
-        print(event)
-        print("I am left-clicked!")
-        
+        if self.is_mine:
+            self.show_mines()
+        else:
+            self.show_cell()
+    
+    def show_cell(self):
+        pass
+    
+    def show_mines(self):
+        #logic to interrupt the gane and display a message that the player lost
+        self.cell_btn_object.configure(bg='red')     
+    
     def right_click_actions(self, event):
         print(event)
         print("I am right-clicked!")
