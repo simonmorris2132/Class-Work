@@ -1,7 +1,7 @@
 from tkinter import *
 
 class Cell:
-    def __init__(self, is_mine=False):
+    def __init__(self, x, y, is_mine=False):
         self.is_mine = is_mine
         self.cell_btn_object = None
         self.x = x
@@ -12,7 +12,7 @@ class Cell:
             location,
             width=12, 
             height=4,
-            text=f"{self.x},{self.y}"
+            text=f"{self.x}.{self.y}"
         )
         
         self.cell_btn_object = btn
