@@ -1,0 +1,51 @@
+From 38b09ba6542e9e8222e5fbac72f5126ea51a1556 Mon Sep 17 00:00:00 2001
+From: Simon Morris <simonjmorris213@gmail.com>
+Date: Wed, 27 Apr 2022 03:07:35 +0000
+Subject: [PATCH] commit
+
+---
+ .../pystuff/__pycache__/cell.cpython-310.pyc  | Bin 1146 -> 1133 bytes
+ .../__pycache__/settings.cpython-310.pyc      | Bin 230 -> 217 bytes
+ .../pystuff/__pycache__/utils.cpython-310.pyc | Bin 443 -> 430 bytes
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+diff --git a/2022_04/pystuff/__pycache__/cell.cpython-310.pyc b/2022_04/pystuff/__pycache__/cell.cpython-310.pyc
+index 217e271a50986bf16f2db9172a86897489d267ac..011699c91e40127cd17bcecaa5820e82c86e7f9c 100644
+GIT binary patch
+delta 87
+zcmeyx@s@)(pO=@50SI`@GLjZg<o##kq@R(Wo2s9kn3JjRlAm0fo0?Zrte>1%l$u(U
+pl3G@*@0^oZT&x?OUzDwHWME_zZ(yQdP+443nwF-&IfPM-835*s9LoRz
+
+delta 100
+zcmaFM@r#2upO=@50SH2j(vo&h<o)OApKKKqTAW%`98;W`o1YispO@-Vlv$P<<C33T
+znwy$eQXG?<Sd^Mtl#*Ij9OImmSX`_do?nz5V`N}t6mMV>Q&3r4Qks?)v)P?djTr#s
+C6eC;!
+
+diff --git a/2022_04/pystuff/__pycache__/settings.cpython-310.pyc b/2022_04/pystuff/__pycache__/settings.cpython-310.pyc
+index a5b463907b1da6fba10548ad160a899d110b8ee1..2326d5b5ceb6ac2f9fc3226913c2b8b9fc20fbbe 100644
+GIT binary patch
+delta 109
+zcmaFHc$1MgpO=@50SI`@GLjT0@`i-m;&c!4bcql4jB;JcP{az90u#U7^fU5vQ}weG
+zb29Z^@{>z*Q}arS^^+5eQd5gkQp<|<opTb4i*>{Ei?a2N42+E84NUY4DvL`>)6(=O
+H9#R1St~Vk7
+
+delta 122
+zcmcb~_>7S^pO=@50SKP!rzI&*<PAxT;&c!4bcql4jB;JcP{ab10u#T2ldWPxi&Kk=
+zV~R6#^Ydc-^HN=kGRsn9T=J7kb5rw5ier)!i&9gIQc}x`W1Mpmi;H!`^NX@$j0}v7
+U;tfn<3Mz|BO4HI}CT>*$0ORT?hyVZp
+
+diff --git a/2022_04/pystuff/__pycache__/utils.cpython-310.pyc b/2022_04/pystuff/__pycache__/utils.cpython-310.pyc
+index a659f910083b23320462c813e0078ff947b7f270..fafebee224c62c7e20dfcabc07f7c0eb4edb9a5a 100644
+GIT binary patch
+delta 85
+zcmdnZypEYSpO=@50SI`@GLlwK<Xvpzte=seo2s9kn3JjRlAm0fo0?Zrte>1%l$u(U
+nl3G@*@0^oZT&x?OUzDwHWME_zZ(yQdP+443nwF+N@#i4`Y{MN2
+
+delta 98
+zcmZ3-yqlRfpO=@50SFdxr6sMO$h+7xAlWJ=v^ce>IHou=H$N}NKQGm#D6=dz#w9<w
+zG&eP`q&Oxyu_!gQC?&P5IL0|AvA9?_JijPA#>l|PDBi#%rl7L8q%<upX5yPe09g_v
+AuK)l5
+
+-- 
+2.35.1
+
