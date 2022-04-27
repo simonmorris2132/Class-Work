@@ -45,6 +45,6 @@ for x in range(settings.GRID_SIZE):
             column=x, row=y
         )
         
-print(len(Cell.all))
+Cell.randomize_mines()
 
 root.mainloop()
