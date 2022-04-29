@@ -31,6 +31,11 @@ class Cell:
             self.show_mines()
         else:
             self.show_cell()
+            
+    def get_cell_by_axis(self, x, y):
+        for cell in Cell.all:
+            if cell.x == x and cell.y:
+                return cell
     
     def show_cell(self):
         pass
