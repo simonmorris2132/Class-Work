@@ -1,5 +1,5 @@
 import qrcode
 
-img = qrcode.make("https://open.spotify.com/artist/72qOGv3zp1iEaOpQIHXF7g")
+img = qrcode.make("https://stacyhassett.bandcamp.com")
 
-img.save("abriction.jpg")
+img.save("myQr.jpg")
