@@ -48,6 +48,7 @@ class Cell:
             self.get_cell_by_axis(self.x + 1, self.y + 1),
             self.get_cell_by_axis(self.x, self.y + 1)
         ]
+        print(surrounded_cells)
     
     def show_mines(self):
         #logic to interrupt the gane and display a message that the player lost
