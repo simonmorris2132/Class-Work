@@ -97,14 +97,6 @@ public class UserController {
 
     }
     
-    @PostMapping("/add")
-    public @ResponseBody String addNewUser(@RequestParam String name, @RequestParam String email) {
-        User n = new User();
-        n.setName(name);
-        n.setEmail(email);
-        userRepository.save(n);
-        return "Saved";
-    }
 
     @PutMapping
     public ResponseEntity<Object> putComment(RestTemplate restTemplate, @RequestBody User updateUser) {
