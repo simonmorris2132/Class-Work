@@ -14,6 +14,7 @@ class Cell:
         
         #append the object to the Cell.all list
         Cell.all.append(self)
+        
     def create_btn_object(self, location):
         btn = Button(
             location,
