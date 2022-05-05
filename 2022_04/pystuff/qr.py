@@ -2,4 +2,4 @@ import qrcode
 
 img = qrcode.make("https://stacyhassett.bandcamp.com")
 
-img.save("myQr.jpg")
+img.save("eelbath.jpg")
