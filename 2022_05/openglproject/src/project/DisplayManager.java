@@ -13,7 +13,7 @@ public class DisplayManager {
     private static final int height = 720;
     private static final int fpsCap = 120;
 
-    public static void createDisplay() throws LWJGLException {
+    public static void createDisplay() {
 
         ContextAttribs attribs = new ContextAttribs(3,2);
         attribs.withForwardCompatible(true);
