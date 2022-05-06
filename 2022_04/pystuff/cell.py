@@ -38,6 +38,7 @@ class Cell:
             if cell.x == x and cell.y:
                 return cell
     
+    @property
     def surrounded_cells(self):
         cells = [
             self.get_cell_by_axis(self.x - 1, self.y - 1),
@@ -52,6 +53,7 @@ class Cell:
         
         cells = [cell for cell in cells if cell is not None]
     
+    @property
     def surrounded_cells_mines_length(self):
         counter = 0
         for cell in self.surrounded_cells:
@@ -60,7 +62,7 @@ class Cell:
         return counter
         
     def show_cells(self):
-        print(self.surrounded_cells)
+        print(self.surrounded_cells_mines_length)
     
     def show_mines(self):
         #logic to interrupt the gane and display a message that the player lost
