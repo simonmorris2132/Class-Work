@@ -11,6 +11,7 @@ public class DisplayManager {
     
     private static final int width = 1280;
     private static final int height = 720;
+    private static final int fpsCap = 120
 
     public static void createDisplay() throws LWJGLException {
 
@@ -31,10 +32,12 @@ public class DisplayManager {
 
     public static void updateDisplay() {
 
+        Display.sync(fpsCap);
+
     }
 
     public static void closeDisplay() {
-
+        Display.destroy();
     }
 
 }
