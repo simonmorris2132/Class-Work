@@ -52,6 +52,7 @@ class Cell:
         ]
         
         cells = [cell for cell in cells if cell is not None]
+        return cells
     
     @property
     def surrounded_cells_mines_length(self):
