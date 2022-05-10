@@ -1,10 +1,20 @@
 package com.careerdevs.gorestsql.models;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class User {
+    
+    @Id
+    @GeneratedValue
     private int id;
     private String name;
     private String email;
     private String gender;
+    @Column(length = 255)
     private String status;
 
     public User() {
