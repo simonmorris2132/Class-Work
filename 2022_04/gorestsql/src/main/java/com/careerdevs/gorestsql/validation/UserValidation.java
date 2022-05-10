@@ -16,7 +16,7 @@ public class UserValidation {
             if (user.getId() == 0) {
                 errors.addError("id", "ID can not be left blank");
             } else {
-                Optional<User> foundUser = userRepository.findById(user.getId());
+                Optional<User> foundUser = userRepository.findById((long) user.getId());
                 if (foundUser.isEmpty()) {
                     errors.addError("id", "No user found with the ID: " + user.getId());
                 }
