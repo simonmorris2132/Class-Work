@@ -13,6 +13,7 @@ public class MainGameLoop {
         }
 
         DisplayManager.closeDisplay();
+/*         System.out.println(System.getProperty("java.library.path")); */
 
     }
 }
