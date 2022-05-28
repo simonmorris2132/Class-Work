@@ -4,6 +4,7 @@ import com.base.engine.project.DisplayManager;
 import org.lwjgl.opengl.Display;
 
 public class MainGameLoop {
+    
     public static void main(String[] args) {
         
         DisplayManager.createDisplay();
@@ -13,7 +14,7 @@ public class MainGameLoop {
         }
 
         DisplayManager.closeDisplay();
-/*         System.out.println(System.getProperty("java.library.path")); */
 
     }
+    
 }
