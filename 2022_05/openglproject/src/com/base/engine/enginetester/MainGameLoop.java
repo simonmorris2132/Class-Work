@@ -1,7 +1,8 @@
-package enginetester;
+package com.base.engine.enginetester;
+
+import com.base.engine.project.DisplayManager;
 
 import org.lwjgl.opengl.Display;
-import project.DisplayManager;
 
 public class MainGameLoop {
     public static void main(String[] args) {
