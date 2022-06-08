@@ -15,6 +15,7 @@ public class MainGameLoop {
 
         DisplayManager.closeDisplay();
 
+        System.out.println("hello");
     }
     
 }
