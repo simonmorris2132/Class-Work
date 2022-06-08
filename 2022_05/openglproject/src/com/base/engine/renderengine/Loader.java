@@ -22,6 +22,15 @@ public class Loader {
         return new RawModel(vaoID, positions.length / 3);
     }
 
+    public void cleanUp() {
+        for (int vao : vaos) {
+            GL30.glDeleteVertexArrays(vao);
+        }
+        for (int vbo : vbos) {
+            GL15.glDeleteBuffers(vbo);
+        }
+    }
+
     private int createVAO() {
         int vaoID = GL30.glGenVertexArrays();
         vaos.add(vaoID);
