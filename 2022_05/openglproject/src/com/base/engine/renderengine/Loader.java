@@ -3,7 +3,6 @@ package com.base.engine.renderengine;
 import java.nio.FloatBuffer;
 import java.util.ArrayList;
 import java.util.List;
-
 import org.lwjgl.BufferUtils;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL15;
